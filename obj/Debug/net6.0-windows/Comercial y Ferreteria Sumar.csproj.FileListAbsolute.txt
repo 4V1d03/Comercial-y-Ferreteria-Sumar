@@ -1,0 +1,15 @@
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.AssemblyReference.cache
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Clientes.resources
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Empleados.resources
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Form1.resources
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Menu.resources
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Productos.resources
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Proveedores.resources
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Sucursales.resources
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Usuarios.resources
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Ventas.resources
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.GenerateResource.cache
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.AssemblyInfoInputs.cache
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.AssemblyInfo.cs
+C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.CoreCompileInputs.cache

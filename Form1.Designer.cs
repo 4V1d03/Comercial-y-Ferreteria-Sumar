@@ -33,7 +33,7 @@
             label3 = new Label();
             txtusuariolg = new TextBox();
             txtclavelg = new TextBox();
-            button1 = new Button();
+            btningresarlg = new Button();
             SuspendLayout();
             // 
             // label1
@@ -72,7 +72,7 @@
             txtusuariolg.Name = "txtusuariolg";
             txtusuariolg.Size = new Size(149, 23);
             txtusuariolg.TabIndex = 3;
-            txtusuariolg.TextChanged += txtusuariolg_TextChanged;
+            //txtusuariolg.TextChanged += txtusuariolg_TextChanged;
             // 
             // txtclavelg
             // 
@@ -81,16 +81,17 @@
             txtclavelg.Size = new Size(149, 23);
             txtclavelg.TabIndex = 4;
             // 
-            // button1
+            // btningresarlg
             // 
-            button1.BackColor = Color.Turquoise;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(150, 305);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 37);
-            button1.TabIndex = 5;
-            button1.Text = "Ingresar";
-            button1.UseVisualStyleBackColor = false;
+            btningresarlg.BackColor = Color.Turquoise;
+            btningresarlg.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btningresarlg.Location = new Point(150, 305);
+            btningresarlg.Name = "btningresarlg";
+            btningresarlg.Size = new Size(94, 37);
+            btningresarlg.TabIndex = 5;
+            btningresarlg.Text = "Ingresar";
+            btningresarlg.UseVisualStyleBackColor = false;
+            //btningresarlg.Click += button1_Click;
             // 
             // Form1
             // 
@@ -98,7 +99,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 255, 192);
             ClientSize = new Size(401, 364);
-            Controls.Add(button1);
+            Controls.Add(btningresarlg);
             Controls.Add(txtclavelg);
             Controls.Add(txtusuariolg);
             Controls.Add(label3);
@@ -107,6 +108,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Iniciar Sesion";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -118,6 +120,6 @@
         private Label label3;
         private TextBox txtusuariolg;
         private TextBox txtclavelg;
-        private Button button1;
+        private Button btningresarlg;
     }
 }
