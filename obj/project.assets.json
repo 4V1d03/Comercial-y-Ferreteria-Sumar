@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\aguil\\.nuget\\packages\\": {}
+    "C:\\Users\\zaval\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aguil\\OneDrive\\gitHub\\fereteriaaa\\Comercial y Ferreteria Sumar.csproj",
+      "projectUniqueName": "C:\\Users\\zaval\\source\\repos\\Comercial-y-Ferreteria-Sumar\\Comercial y Ferreteria Sumar.csproj",
       "projectName": "Comercial y Ferreteria Sumar",
-      "projectPath": "C:\\Users\\aguil\\OneDrive\\gitHub\\fereteriaaa\\Comercial y Ferreteria Sumar.csproj",
-      "packagesPath": "C:\\Users\\aguil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aguil\\OneDrive\\gitHub\\fereteriaaa\\obj\\",
+      "projectPath": "C:\\Users\\zaval\\source\\repos\\Comercial-y-Ferreteria-Sumar\\Comercial y Ferreteria Sumar.csproj",
+      "packagesPath": "C:\\Users\\zaval\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zaval\\Source\\Repos\\Comercial-y-Ferreteria-Sumar\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\aguil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zaval\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
