@@ -11,5 +11,10 @@ namespace Comercial_y_Ferreteria_Sumar
         {
 
         }
+
+        private void txtusuariolg_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

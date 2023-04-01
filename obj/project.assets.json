@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aguil\\OneDrive\\proyectos UNiversidad\\Prog Visual\\Comercial y Ferreteria Sumar\\Comercial y Ferreteria Sumar.csproj",
+      "projectUniqueName": "C:\\Users\\aguil\\OneDrive\\gitHub\\fereteriaaa\\Comercial y Ferreteria Sumar.csproj",
       "projectName": "Comercial y Ferreteria Sumar",
-      "projectPath": "C:\\Users\\aguil\\OneDrive\\proyectos UNiversidad\\Prog Visual\\Comercial y Ferreteria Sumar\\Comercial y Ferreteria Sumar.csproj",
+      "projectPath": "C:\\Users\\aguil\\OneDrive\\gitHub\\fereteriaaa\\Comercial y Ferreteria Sumar.csproj",
       "packagesPath": "C:\\Users\\aguil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aguil\\OneDrive\\proyectos UNiversidad\\Prog Visual\\Comercial y Ferreteria Sumar\\obj\\",
+      "outputPath": "C:\\Users\\aguil\\OneDrive\\gitHub\\fereteriaaa\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aguil\\AppData\\Roaming\\NuGet\\NuGet.Config",
