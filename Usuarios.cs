@@ -15,6 +15,13 @@ namespace Comercial_y_Ferreteria_Sumar
         public Usuarios()
         {
             InitializeComponent();
+        }     
+
+        private void Usuarios_Load(object sender, EventArgs e)
+        {
+
         }
+
+        
     }
 }
