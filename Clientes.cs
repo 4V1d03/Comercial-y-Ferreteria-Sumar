@@ -17,6 +17,6 @@ namespace Comercial_y_Ferreteria_Sumar
             InitializeComponent();
         }
 
-        
+       
     }
 }

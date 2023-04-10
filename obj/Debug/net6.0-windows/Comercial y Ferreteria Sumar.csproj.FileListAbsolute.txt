@@ -13,3 +13,28 @@ C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-window
 C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.AssemblyInfoInputs.cache
 C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.AssemblyInfo.cs
 C:\Users\zaval\Source\Repos\Comercial-y-Ferreteria-Sumar\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.CoreCompileInputs.cache
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\bin\Debug\net6.0-windows\Comercial y Ferreteria Sumar.exe
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\bin\Debug\net6.0-windows\Comercial y Ferreteria Sumar.deps.json
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\bin\Debug\net6.0-windows\Comercial y Ferreteria Sumar.runtimeconfig.json
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\bin\Debug\net6.0-windows\Comercial y Ferreteria Sumar.dll
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\bin\Debug\net6.0-windows\Comercial y Ferreteria Sumar.pdb
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.AssemblyReference.cache
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Clientes.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Empleados.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Form1.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Menu.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Productos.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Proveedores.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Sucursales.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Usuarios.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Ventas.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.GenerateResource.cache
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.AssemblyInfoInputs.cache
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.AssemblyInfo.cs
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.CoreCompileInputs.cache
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.dll
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\refint\Comercial y Ferreteria Sumar.dll
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.pdb
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.genruntimeconfig.cache
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\ref\Comercial y Ferreteria Sumar.dll

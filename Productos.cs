@@ -16,5 +16,10 @@ namespace Comercial_y_Ferreteria_Sumar
         {
             InitializeComponent();
         }
+
+        private void Productos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

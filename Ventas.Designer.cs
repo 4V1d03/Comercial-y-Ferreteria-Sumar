@@ -46,11 +46,11 @@
             this.txtsubtotalVT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cbcantidadVT = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.lbltotalapagarVT = new System.Windows.Forms.Label();
             this.txtimpuestoVT = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.lblcantidadapagarVT = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvventasVT)).BeginInit();
             this.gbtipodepagoVT.SuspendLayout();
             this.SuspendLayout();
@@ -224,15 +224,6 @@
             this.cbcantidadVT.Size = new System.Drawing.Size(205, 28);
             this.cbcantidadVT.TabIndex = 43;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(439, 96);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "Buscar";
-            // 
             // lbltotalapagarVT
             // 
             this.lbltotalapagarVT.AutoSize = true;
@@ -261,22 +252,32 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(426, 24);
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(323, 19);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 20);
+            this.label9.Size = new System.Drawing.Size(243, 35);
             this.label9.TabIndex = 48;
             this.label9.Text = "Venta de Productos";
+            // 
+            // lblcantidadapagarVT
+            // 
+            this.lblcantidadapagarVT.AutoSize = true;
+            this.lblcantidadapagarVT.Location = new System.Drawing.Point(743, 255);
+            this.lblcantidadapagarVT.Name = "lblcantidadapagarVT";
+            this.lblcantidadapagarVT.Size = new System.Drawing.Size(44, 20);
+            this.lblcantidadapagarVT.TabIndex = 49;
+            this.lblcantidadapagarVT.Text = "00.00";
             // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 641);
+            this.Controls.Add(this.lblcantidadapagarVT);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtimpuestoVT);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lbltotalapagarVT);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.cbcantidadVT);
             this.Controls.Add(this.txtsubtotalVT);
             this.Controls.Add(this.label4);
@@ -324,10 +325,10 @@
         private TextBox txtsubtotalVT;
         private Label label4;
         private ComboBox cbcantidadVT;
-        private Label label5;
         private Label lbltotalapagarVT;
         private TextBox txtimpuestoVT;
         private Label label8;
         private Label label9;
+        private Label lblcantidadapagarVT;
     }
 }

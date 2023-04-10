@@ -32,9 +32,6 @@
             this.btnactualizarCL = new System.Windows.Forms.Button();
             this.btnagregarCL = new System.Windows.Forms.Button();
             this.dgvclientesCL = new System.Windows.Forms.DataGridView();
-            this.gbbuscarUS = new System.Windows.Forms.GroupBox();
-            this.txtbuscarCL = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtrtnCL = new System.Windows.Forms.TextBox();
             this.txtapellidosCL = new System.Windows.Forms.TextBox();
             this.txtdireccionCL = new System.Windows.Forms.TextBox();
@@ -50,12 +47,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvclientesCL)).BeginInit();
-            this.gbbuscarUS.SuspendLayout();
             this.SuspendLayout();
             // 
             // btneliminarCL
             // 
-            this.btneliminarCL.Location = new System.Drawing.Point(814, 542);
+            this.btneliminarCL.Location = new System.Drawing.Point(813, 454);
             this.btneliminarCL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btneliminarCL.Name = "btneliminarCL";
             this.btneliminarCL.Size = new System.Drawing.Size(119, 52);
@@ -65,7 +61,7 @@
             // 
             // btnactualizarCL
             // 
-            this.btnactualizarCL.Location = new System.Drawing.Point(814, 464);
+            this.btnactualizarCL.Location = new System.Drawing.Point(813, 376);
             this.btnactualizarCL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnactualizarCL.Name = "btnactualizarCL";
             this.btnactualizarCL.Size = new System.Drawing.Size(119, 52);
@@ -75,7 +71,7 @@
             // 
             // btnagregarCL
             // 
-            this.btnagregarCL.Location = new System.Drawing.Point(814, 385);
+            this.btnagregarCL.Location = new System.Drawing.Point(813, 297);
             this.btnagregarCL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnagregarCL.Name = "btnagregarCL";
             this.btnagregarCL.Size = new System.Drawing.Size(119, 52);
@@ -88,40 +84,13 @@
             this.dgvclientesCL.AllowUserToAddRows = false;
             this.dgvclientesCL.AllowUserToDeleteRows = false;
             this.dgvclientesCL.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvclientesCL.Location = new System.Drawing.Point(37, 392);
+            this.dgvclientesCL.Location = new System.Drawing.Point(36, 304);
             this.dgvclientesCL.Name = "dgvclientesCL";
             this.dgvclientesCL.ReadOnly = true;
             this.dgvclientesCL.RowHeadersWidth = 51;
             this.dgvclientesCL.RowTemplate.Height = 29;
-            this.dgvclientesCL.Size = new System.Drawing.Size(746, 202);
+            this.dgvclientesCL.Size = new System.Drawing.Size(746, 259);
             this.dgvclientesCL.TabIndex = 32;
-            // 
-            // gbbuscarUS
-            // 
-            this.gbbuscarUS.Controls.Add(this.txtbuscarCL);
-            this.gbbuscarUS.Controls.Add(this.label5);
-            this.gbbuscarUS.Location = new System.Drawing.Point(37, 281);
-            this.gbbuscarUS.Name = "gbbuscarUS";
-            this.gbbuscarUS.Size = new System.Drawing.Size(556, 93);
-            this.gbbuscarUS.TabIndex = 36;
-            this.gbbuscarUS.TabStop = false;
-            this.gbbuscarUS.Text = "Buscar Cliente";
-            // 
-            // txtbuscarCL
-            // 
-            this.txtbuscarCL.Location = new System.Drawing.Point(115, 39);
-            this.txtbuscarCL.Name = "txtbuscarCL";
-            this.txtbuscarCL.Size = new System.Drawing.Size(314, 27);
-            this.txtbuscarCL.TabIndex = 28;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 42);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Nombre :";
             // 
             // txtrtnCL
             // 
@@ -230,9 +199,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(332, 41);
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(258, 33);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(186, 20);
+            this.label9.Size = new System.Drawing.Size(330, 35);
             this.label9.TabIndex = 50;
             this.label9.Text = "Administracion de Clientes";
             // 
@@ -255,7 +225,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.gbbuscarUS);
             this.Controls.Add(this.btneliminarCL);
             this.Controls.Add(this.btnactualizarCL);
             this.Controls.Add(this.btnagregarCL);
@@ -263,8 +232,6 @@
             this.Name = "Clientes";
             this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvclientesCL)).EndInit();
-            this.gbbuscarUS.ResumeLayout(false);
-            this.gbbuscarUS.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,9 +243,6 @@
         private Button btnactualizarCL;
         private Button btnagregarCL;
         private DataGridView dgvclientesCL;
-        private GroupBox gbbuscarUS;
-        private TextBox txtbuscarCL;
-        private Label label5;
         private TextBox txtrtnCL;
         private TextBox txtapellidosCL;
         private TextBox txtdireccionCL;
