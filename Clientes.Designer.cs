@@ -32,13 +32,9 @@
             this.btnactualizarCL = new System.Windows.Forms.Button();
             this.btnagregarCL = new System.Windows.Forms.Button();
             this.dgvclientesCL = new System.Windows.Forms.DataGridView();
-            this.txtrtnCL = new System.Windows.Forms.TextBox();
             this.txtapellidosCL = new System.Windows.Forms.TextBox();
-            this.txtdireccionCL = new System.Windows.Forms.TextBox();
             this.txtnombresCL = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txttelefonoCL = new System.Windows.Forms.TextBox();
@@ -58,6 +54,7 @@
             this.btneliminarCL.TabIndex = 35;
             this.btneliminarCL.Text = "Eliminar";
             this.btneliminarCL.UseVisualStyleBackColor = true;
+            this.btneliminarCL.Click += new System.EventHandler(this.btneliminarCL_Click);
             // 
             // btnactualizarCL
             // 
@@ -68,6 +65,7 @@
             this.btnactualizarCL.TabIndex = 34;
             this.btnactualizarCL.Text = "Actualizar";
             this.btnactualizarCL.UseVisualStyleBackColor = true;
+            this.btnactualizarCL.Click += new System.EventHandler(this.btnactualizarCL_Click);
             // 
             // btnagregarCL
             // 
@@ -78,6 +76,7 @@
             this.btnagregarCL.TabIndex = 33;
             this.btnagregarCL.Text = "Agregar";
             this.btnagregarCL.UseVisualStyleBackColor = true;
+            this.btnagregarCL.Click += new System.EventHandler(this.btnagregarCL_Click);
             // 
             // dgvclientesCL
             // 
@@ -92,26 +91,12 @@
             this.dgvclientesCL.Size = new System.Drawing.Size(746, 259);
             this.dgvclientesCL.TabIndex = 32;
             // 
-            // txtrtnCL
-            // 
-            this.txtrtnCL.Location = new System.Drawing.Point(524, 154);
-            this.txtrtnCL.Name = "txtrtnCL";
-            this.txtrtnCL.Size = new System.Drawing.Size(242, 27);
-            this.txtrtnCL.TabIndex = 45;
-            // 
             // txtapellidosCL
             // 
             this.txtapellidosCL.Location = new System.Drawing.Point(524, 99);
             this.txtapellidosCL.Name = "txtapellidosCL";
             this.txtapellidosCL.Size = new System.Drawing.Size(242, 27);
             this.txtapellidosCL.TabIndex = 44;
-            // 
-            // txtdireccionCL
-            // 
-            this.txtdireccionCL.Location = new System.Drawing.Point(114, 154);
-            this.txtdireccionCL.Name = "txtdireccionCL";
-            this.txtdireccionCL.Size = new System.Drawing.Size(242, 27);
-            this.txtdireccionCL.TabIndex = 43;
             // 
             // txtnombresCL
             // 
@@ -128,24 +113,6 @@
             this.label6.Size = new System.Drawing.Size(70, 20);
             this.label6.TabIndex = 41;
             this.label6.Text = "Nombres";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(36, 161);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 20);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "Direccion";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(482, 161);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 20);
-            this.label3.TabIndex = 39;
-            this.label3.Text = "RTN";
             // 
             // label2
             // 
@@ -166,14 +133,14 @@
             // 
             // txttelefonoCL
             // 
-            this.txttelefonoCL.Location = new System.Drawing.Point(524, 213);
+            this.txttelefonoCL.Location = new System.Drawing.Point(114, 168);
             this.txttelefonoCL.Name = "txttelefonoCL";
             this.txttelefonoCL.Size = new System.Drawing.Size(242, 27);
             this.txttelefonoCL.TabIndex = 49;
             // 
             // txtcorreoCL
             // 
-            this.txtcorreoCL.Location = new System.Drawing.Point(114, 213);
+            this.txtcorreoCL.Location = new System.Drawing.Point(524, 168);
             this.txtcorreoCL.Name = "txtcorreoCL";
             this.txtcorreoCL.Size = new System.Drawing.Size(242, 27);
             this.txtcorreoCL.TabIndex = 48;
@@ -181,7 +148,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(54, 220);
+            this.label7.Location = new System.Drawing.Point(464, 175);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(54, 20);
             this.label7.TabIndex = 47;
@@ -190,7 +157,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(451, 220);
+            this.label8.Location = new System.Drawing.Point(41, 175);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 20);
             this.label8.TabIndex = 46;
@@ -216,13 +183,9 @@
             this.Controls.Add(this.txtcorreoCL);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtrtnCL);
             this.Controls.Add(this.txtapellidosCL);
-            this.Controls.Add(this.txtdireccionCL);
             this.Controls.Add(this.txtnombresCL);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btneliminarCL);
@@ -231,6 +194,7 @@
             this.Controls.Add(this.dgvclientesCL);
             this.Name = "Clientes";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.Clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvclientesCL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -243,13 +207,9 @@
         private Button btnactualizarCL;
         private Button btnagregarCL;
         private DataGridView dgvclientesCL;
-        private TextBox txtrtnCL;
         private TextBox txtapellidosCL;
-        private TextBox txtdireccionCL;
         private TextBox txtnombresCL;
         private Label label6;
-        private Label label4;
-        private Label label3;
         private Label label2;
         private Label label1;
         private TextBox txttelefonoCL;

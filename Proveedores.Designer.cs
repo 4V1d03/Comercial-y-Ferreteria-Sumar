@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtnombrePROV = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txttelefonoPROV = new System.Windows.Forms.TextBox();
@@ -43,7 +44,9 @@
             this.btnagregarPROV = new System.Windows.Forms.Button();
             this.dgvproveedoresPROV = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
+            this.epPROV = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvproveedoresPROV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epPROV)).BeginInit();
             this.SuspendLayout();
             // 
             // txtnombrePROV
@@ -53,6 +56,8 @@
             this.txtnombrePROV.Name = "txtnombrePROV";
             this.txtnombrePROV.Size = new System.Drawing.Size(242, 27);
             this.txtnombrePROV.TabIndex = 4;
+            this.txtnombrePROV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombrePROV_KeyPress);
+            this.txtnombrePROV.Validating += new System.ComponentModel.CancelEventHandler(this.txtnombrePROV_Validating);
             // 
             // label1
             // 
@@ -70,6 +75,8 @@
             this.txttelefonoPROV.Name = "txttelefonoPROV";
             this.txttelefonoPROV.Size = new System.Drawing.Size(206, 27);
             this.txttelefonoPROV.TabIndex = 22;
+            this.txttelefonoPROV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefonoPROV_KeyPress);
+            this.txttelefonoPROV.Validating += new System.ComponentModel.CancelEventHandler(this.txttelefonoPROV_Validating);
             // 
             // txtcorreoPROV
             // 
@@ -78,6 +85,7 @@
             this.txtcorreoPROV.Name = "txtcorreoPROV";
             this.txtcorreoPROV.Size = new System.Drawing.Size(242, 27);
             this.txtcorreoPROV.TabIndex = 21;
+            this.txtcorreoPROV.Validating += new System.ComponentModel.CancelEventHandler(this.txtcorreoPROV_Validating);
             // 
             // label8
             // 
@@ -104,6 +112,7 @@
             this.txtdireccionPROV.Name = "txtdireccionPROV";
             this.txtdireccionPROV.Size = new System.Drawing.Size(242, 27);
             this.txtdireccionPROV.TabIndex = 24;
+            this.txtdireccionPROV.Validating += new System.ComponentModel.CancelEventHandler(this.txtdireccionPROV_Validating);
             // 
             // label2
             // 
@@ -121,6 +130,8 @@
             this.txtrtnPROV.Name = "txtrtnPROV";
             this.txtrtnPROV.Size = new System.Drawing.Size(206, 27);
             this.txtrtnPROV.TabIndex = 26;
+            this.txtrtnPROV.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtrtnPROV_KeyPress);
+            this.txtrtnPROV.Validating += new System.ComponentModel.CancelEventHandler(this.txtrtnPROV_Validating);
             // 
             // label3
             // 
@@ -140,6 +151,7 @@
             this.btneliminarPROV.TabIndex = 36;
             this.btneliminarPROV.Text = "Eliminar";
             this.btneliminarPROV.UseVisualStyleBackColor = true;
+            this.btneliminarPROV.Click += new System.EventHandler(this.btneliminarPROV_Click);
             // 
             // btnactualizarPROV
             // 
@@ -150,6 +162,7 @@
             this.btnactualizarPROV.TabIndex = 35;
             this.btnactualizarPROV.Text = "Actualizar";
             this.btnactualizarPROV.UseVisualStyleBackColor = true;
+            this.btnactualizarPROV.Click += new System.EventHandler(this.btnactualizarPROV_Click);
             // 
             // btnagregarPROV
             // 
@@ -160,6 +173,7 @@
             this.btnagregarPROV.TabIndex = 34;
             this.btnagregarPROV.Text = "Agregar";
             this.btnagregarPROV.UseVisualStyleBackColor = true;
+            this.btnagregarPROV.Click += new System.EventHandler(this.btnagregarPROV_Click);
             // 
             // dgvproveedoresPROV
             // 
@@ -171,6 +185,7 @@
             this.dgvproveedoresPROV.RowTemplate.Height = 25;
             this.dgvproveedoresPROV.Size = new System.Drawing.Size(721, 209);
             this.dgvproveedoresPROV.TabIndex = 33;
+            this.dgvproveedoresPROV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproveedoresPROV_CellClick);
             // 
             // label10
             // 
@@ -181,6 +196,10 @@
             this.label10.Size = new System.Drawing.Size(445, 41);
             this.label10.TabIndex = 50;
             this.label10.Text = "Adminitración de Proveedores";
+            // 
+            // epPROV
+            // 
+            this.epPROV.ContainerControl = this;
             // 
             // Proveedores
             // 
@@ -204,7 +223,9 @@
             this.Controls.Add(this.label1);
             this.Name = "Proveedores";
             this.Text = "Proveedores";
+            this.Load += new System.EventHandler(this.Proveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvproveedoresPROV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epPROV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,5 +248,6 @@
         private Button btnagregarPROV;
         private DataGridView dgvproveedoresPROV;
         private Label label10;
+        private ErrorProvider epPROV;
     }
 }

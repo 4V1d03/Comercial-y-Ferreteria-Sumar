@@ -28,89 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            txtusuariolg = new TextBox();
-            txtclavelg = new TextBox();
-            btningresarlg = new Button();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtusuariolg = new System.Windows.Forms.TextBox();
+            this.txtclavelg = new System.Windows.Forms.TextBox();
+            this.btningresarlg = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(150, 27);
-            label1.Name = "label1";
-            label1.Size = new Size(78, 32);
-            label1.TabIndex = 0;
-            label1.Text = "Login";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(171, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 41);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Login";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(55, 122);
-            label2.Name = "label2";
-            label2.Size = new Size(49, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Usuario";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(63, 163);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 20);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Usuario";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(55, 230);
-            label3.Name = "label3";
-            label3.Size = new Size(37, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Clave";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(63, 307);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Clave";
             // 
             // txtusuariolg
             // 
-            txtusuariolg.Location = new Point(133, 114);
-            txtusuariolg.Name = "txtusuariolg";
-            txtusuariolg.Size = new Size(149, 23);
-            txtusuariolg.TabIndex = 3;
-            //txtusuariolg.TextChanged += txtusuariolg_TextChanged;
+            this.txtusuariolg.Location = new System.Drawing.Point(152, 152);
+            this.txtusuariolg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtusuariolg.Name = "txtusuariolg";
+            this.txtusuariolg.Size = new System.Drawing.Size(170, 27);
+            this.txtusuariolg.TabIndex = 3;
             // 
             // txtclavelg
             // 
-            txtclavelg.Location = new Point(133, 227);
-            txtclavelg.Name = "txtclavelg";
-            txtclavelg.Size = new Size(149, 23);
-            txtclavelg.TabIndex = 4;
+            this.txtclavelg.Location = new System.Drawing.Point(152, 303);
+            this.txtclavelg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtclavelg.Name = "txtclavelg";
+            this.txtclavelg.Size = new System.Drawing.Size(170, 27);
+            this.txtclavelg.TabIndex = 4;
             // 
             // btningresarlg
             // 
-            btningresarlg.BackColor = Color.Turquoise;
-            btningresarlg.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btningresarlg.Location = new Point(150, 305);
-            btningresarlg.Name = "btningresarlg";
-            btningresarlg.Size = new Size(94, 37);
-            btningresarlg.TabIndex = 5;
-            btningresarlg.Text = "Ingresar";
-            btningresarlg.UseVisualStyleBackColor = false;
-            //btningresarlg.Click += button1_Click;
+            this.btningresarlg.BackColor = System.Drawing.Color.Turquoise;
+            this.btningresarlg.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btningresarlg.Location = new System.Drawing.Point(171, 407);
+            this.btningresarlg.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btningresarlg.Name = "btningresarlg";
+            this.btningresarlg.Size = new System.Drawing.Size(107, 49);
+            this.btningresarlg.TabIndex = 5;
+            this.btningresarlg.Text = "Ingresar";
+            this.btningresarlg.UseVisualStyleBackColor = false;
+            this.btningresarlg.Click += new System.EventHandler(this.btningresarlg_Click);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(192, 255, 192);
-            ClientSize = new Size(401, 364);
-            Controls.Add(btningresarlg);
-            Controls.Add(txtclavelg);
-            Controls.Add(txtusuariolg);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "Form1";
-            Text = "Iniciar Sesion";
-            Load += Form1_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(458, 485);
+            this.Controls.Add(this.btningresarlg);
+            this.Controls.Add(this.txtclavelg);
+            this.Controls.Add(this.txtusuariolg);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Name = "Form1";
+            this.Text = "Iniciar Sesion";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
