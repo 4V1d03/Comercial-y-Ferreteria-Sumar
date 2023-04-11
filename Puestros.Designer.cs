@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.label10 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label10
@@ -41,11 +42,21 @@
             this.label10.TabIndex = 51;
             this.label10.Text = "Adminitración de Puestos";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(363, 171);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Puestros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Name = "Puestros";
             this.Text = "Puestros";
@@ -57,5 +68,6 @@
         #endregion
 
         private Label label10;
+        private Button button1;
     }
 }
