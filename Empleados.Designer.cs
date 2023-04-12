@@ -52,12 +52,16 @@
             this.cbjornadaEMP = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.txtcontraEMP = new System.Windows.Forms.TextBox();
+            this.txtusuarioEMP = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtdireccionEMP = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtsalarioEMP = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btnmenuEMP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvempleadosEMP)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -97,14 +101,18 @@
             // 
             // dgvempleadosEMP
             // 
+            this.dgvempleadosEMP.AllowUserToAddRows = false;
+            this.dgvempleadosEMP.AllowUserToDeleteRows = false;
             this.dgvempleadosEMP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvempleadosEMP.Location = new System.Drawing.Point(37, 435);
+            this.dgvempleadosEMP.Location = new System.Drawing.Point(46, 508);
             this.dgvempleadosEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvempleadosEMP.Name = "dgvempleadosEMP";
+            this.dgvempleadosEMP.ReadOnly = true;
             this.dgvempleadosEMP.RowHeadersWidth = 51;
             this.dgvempleadosEMP.RowTemplate.Height = 25;
-            this.dgvempleadosEMP.Size = new System.Drawing.Size(721, 209);
+            this.dgvempleadosEMP.Size = new System.Drawing.Size(1002, 209);
             this.dgvempleadosEMP.TabIndex = 4;
+            this.dgvempleadosEMP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvempleadosEMP_CellClick);
             // 
             // txtapellidosEMP
             // 
@@ -196,33 +204,36 @@
             // 
             // btnagregarEMP
             // 
-            this.btnagregarEMP.Location = new System.Drawing.Point(792, 435);
+            this.btnagregarEMP.Location = new System.Drawing.Point(1080, 508);
             this.btnagregarEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnagregarEMP.Name = "btnagregarEMP";
             this.btnagregarEMP.Size = new System.Drawing.Size(119, 52);
             this.btnagregarEMP.TabIndex = 22;
             this.btnagregarEMP.Text = "Agregar";
             this.btnagregarEMP.UseVisualStyleBackColor = true;
+            this.btnagregarEMP.Click += new System.EventHandler(this.btnagregarEMP_Click);
             // 
             // btnActualizarEMP
             // 
-            this.btnActualizarEMP.Location = new System.Drawing.Point(792, 514);
+            this.btnActualizarEMP.Location = new System.Drawing.Point(1080, 587);
             this.btnActualizarEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnActualizarEMP.Name = "btnActualizarEMP";
             this.btnActualizarEMP.Size = new System.Drawing.Size(119, 52);
             this.btnActualizarEMP.TabIndex = 23;
             this.btnActualizarEMP.Text = "Actualizar";
             this.btnActualizarEMP.UseVisualStyleBackColor = true;
+            this.btnActualizarEMP.Click += new System.EventHandler(this.btnActualizarEMP_Click);
             // 
             // btneliminarEMP
             // 
-            this.btneliminarEMP.Location = new System.Drawing.Point(792, 592);
+            this.btneliminarEMP.Location = new System.Drawing.Point(1080, 665);
             this.btneliminarEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btneliminarEMP.Name = "btneliminarEMP";
             this.btneliminarEMP.Size = new System.Drawing.Size(119, 52);
             this.btneliminarEMP.TabIndex = 24;
             this.btneliminarEMP.Text = "Eliminar";
             this.btneliminarEMP.UseVisualStyleBackColor = true;
+            this.btneliminarEMP.Click += new System.EventHandler(this.btneliminarEMP_Click);
             // 
             // label10
             // 
@@ -272,10 +283,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Location = new System.Drawing.Point(828, 85);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(362, 191);
@@ -283,45 +290,99 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Creación de Usuario";
             // 
-            // textBox1
+            // txtcontraEMP
             // 
-            this.textBox1.Location = new System.Drawing.Point(127, 131);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 27);
-            this.textBox1.TabIndex = 32;
+            this.txtcontraEMP.Location = new System.Drawing.Point(962, 358);
+            this.txtcontraEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtcontraEMP.Name = "txtcontraEMP";
+            this.txtcontraEMP.Size = new System.Drawing.Size(178, 27);
+            this.txtcontraEMP.TabIndex = 32;
             // 
-            // textBox2
+            // txtusuarioEMP
             // 
-            this.textBox2.Location = new System.Drawing.Point(127, 60);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 27);
-            this.textBox2.TabIndex = 31;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(38, 134);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(83, 20);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "Contraseña";
+            this.txtusuarioEMP.Location = new System.Drawing.Point(962, 287);
+            this.txtusuarioEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtusuarioEMP.Name = "txtusuarioEMP";
+            this.txtusuarioEMP.Size = new System.Drawing.Size(178, 27);
+            this.txtusuarioEMP.TabIndex = 31;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(62, 63);
+            this.label12.Location = new System.Drawing.Point(897, 290);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 20);
             this.label12.TabIndex = 29;
             this.label12.Text = "Usuario";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(873, 361);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(83, 20);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "Contraseña";
+            // 
+            // txtdireccionEMP
+            // 
+            this.txtdireccionEMP.Location = new System.Drawing.Point(552, 354);
+            this.txtdireccionEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtdireccionEMP.Name = "txtdireccionEMP";
+            this.txtdireccionEMP.Size = new System.Drawing.Size(242, 27);
+            this.txtdireccionEMP.TabIndex = 30;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(466, 358);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(72, 20);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Direccion";
+            // 
+            // txtsalarioEMP
+            // 
+            this.txtsalarioEMP.Location = new System.Drawing.Point(157, 411);
+            this.txtsalarioEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtsalarioEMP.Name = "txtsalarioEMP";
+            this.txtsalarioEMP.Size = new System.Drawing.Size(242, 27);
+            this.txtsalarioEMP.TabIndex = 32;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(71, 415);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 20);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "Salario";
+            // 
+            // btnmenuEMP
+            // 
+            this.btnmenuEMP.Location = new System.Drawing.Point(1080, 26);
+            this.btnmenuEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnmenuEMP.Name = "btnmenuEMP";
+            this.btnmenuEMP.Size = new System.Drawing.Size(119, 52);
+            this.btnmenuEMP.TabIndex = 68;
+            this.btnmenuEMP.Text = "Menu";
+            this.btnmenuEMP.UseVisualStyleBackColor = true;
+            this.btnmenuEMP.Click += new System.EventHandler(this.btnmenuEMP_Click);
+            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1225, 695);
+            this.ClientSize = new System.Drawing.Size(1225, 741);
+            this.Controls.Add(this.btnmenuEMP);
+            this.Controls.Add(this.txtcontraEMP);
+            this.Controls.Add(this.txtusuarioEMP);
+            this.Controls.Add(this.txtsalarioEMP);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.txtdireccionEMP);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cbjornadaEMP);
             this.Controls.Add(this.label9);
@@ -349,9 +410,8 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Empleados";
             this.Text = "Empleados";
+            this.Load += new System.EventHandler(this.Empleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvempleadosEMP)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,9 +443,14 @@
         private ComboBox cbjornadaEMP;
         private Label label9;
         private GroupBox groupBox1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtcontraEMP;
+        private TextBox txtusuarioEMP;
         private Label label12;
         private Label label11;
+        private TextBox txtdireccionEMP;
+        private Label label13;
+        private TextBox txtsalarioEMP;
+        private Label label14;
+        private Button btnmenuEMP;
     }
 }

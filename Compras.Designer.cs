@@ -39,21 +39,28 @@
             this.btnactualizarCOM = new System.Windows.Forms.Button();
             this.btnagregarCOM = new System.Windows.Forms.Button();
             this.dgvcomprasCOM = new System.Windows.Forms.DataGridView();
+            this.btnmenuCOM = new System.Windows.Forms.Button();
+            this.cbproductoCOM = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtpreciocostoCOM = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtcantidadCOM = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomprasCOM)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpfechaCOM
             // 
-            this.dtpfechaCOM.Location = new System.Drawing.Point(145, 271);
+            this.dtpfechaCOM.Location = new System.Drawing.Point(190, 179);
             this.dtpfechaCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpfechaCOM.Name = "dtpfechaCOM";
-            this.dtpfechaCOM.Size = new System.Drawing.Size(242, 27);
+            this.dtpfechaCOM.Size = new System.Drawing.Size(209, 27);
             this.dtpfechaCOM.TabIndex = 25;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(92, 276);
+            this.label3.Location = new System.Drawing.Point(137, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 20);
             this.label3.TabIndex = 23;
@@ -62,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 203);
+            this.label2.Location = new System.Drawing.Point(447, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 21;
@@ -71,7 +78,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 124);
+            this.label1.Location = new System.Drawing.Point(107, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 20;
@@ -80,7 +87,7 @@
             // cbempleadoCOM
             // 
             this.cbempleadoCOM.FormattingEnabled = true;
-            this.cbempleadoCOM.Location = new System.Drawing.Point(145, 121);
+            this.cbempleadoCOM.Location = new System.Drawing.Point(190, 130);
             this.cbempleadoCOM.Name = "cbempleadoCOM";
             this.cbempleadoCOM.Size = new System.Drawing.Size(209, 28);
             this.cbempleadoCOM.TabIndex = 30;
@@ -88,7 +95,7 @@
             // cbproveedorCOM
             // 
             this.cbproveedorCOM.FormattingEnabled = true;
-            this.cbproveedorCOM.Location = new System.Drawing.Point(145, 200);
+            this.cbproveedorCOM.Location = new System.Drawing.Point(530, 125);
             this.cbproveedorCOM.Name = "cbproveedorCOM";
             this.cbproveedorCOM.Size = new System.Drawing.Size(209, 28);
             this.cbproveedorCOM.TabIndex = 31;
@@ -97,7 +104,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(286, 33);
+            this.label10.Location = new System.Drawing.Point(234, 33);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(395, 41);
             this.label10.TabIndex = 52;
@@ -144,11 +151,78 @@
             this.dgvcomprasCOM.Size = new System.Drawing.Size(721, 209);
             this.dgvcomprasCOM.TabIndex = 53;
             // 
+            // btnmenuCOM
+            // 
+            this.btnmenuCOM.Location = new System.Drawing.Point(888, 22);
+            this.btnmenuCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnmenuCOM.Name = "btnmenuCOM";
+            this.btnmenuCOM.Size = new System.Drawing.Size(119, 52);
+            this.btnmenuCOM.TabIndex = 77;
+            this.btnmenuCOM.Text = "Menu";
+            this.btnmenuCOM.UseVisualStyleBackColor = true;
+            this.btnmenuCOM.Click += new System.EventHandler(this.btnmenuCOM_Click);
+            // 
+            // cbproductoCOM
+            // 
+            this.cbproductoCOM.FormattingEnabled = true;
+            this.cbproductoCOM.Location = new System.Drawing.Point(530, 176);
+            this.cbproductoCOM.Name = "cbproductoCOM";
+            this.cbproductoCOM.Size = new System.Drawing.Size(205, 28);
+            this.cbproductoCOM.TabIndex = 80;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(455, 179);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 20);
+            this.label6.TabIndex = 79;
+            this.label6.Text = "Producto";
+            // 
+            // txtpreciocostoCOM
+            // 
+            this.txtpreciocostoCOM.Location = new System.Drawing.Point(190, 234);
+            this.txtpreciocostoCOM.Name = "txtpreciocostoCOM";
+            this.txtpreciocostoCOM.Size = new System.Drawing.Size(209, 27);
+            this.txtpreciocostoCOM.TabIndex = 82;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(92, 237);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 20);
+            this.label4.TabIndex = 81;
+            this.label4.Text = "Precio Costo";
+            // 
+            // txtcantidadCOM
+            // 
+            this.txtcantidadCOM.Location = new System.Drawing.Point(530, 230);
+            this.txtcantidadCOM.Name = "txtcantidadCOM";
+            this.txtcantidadCOM.Size = new System.Drawing.Size(209, 27);
+            this.txtcantidadCOM.TabIndex = 84;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(455, 233);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 20);
+            this.label5.TabIndex = 83;
+            this.label5.Text = "Cantidad";
+            // 
             // Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1032, 629);
+            this.Controls.Add(this.txtcantidadCOM);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtpreciocostoCOM);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cbproductoCOM);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnmenuCOM);
             this.Controls.Add(this.btneliminarCOM);
             this.Controls.Add(this.btnactualizarCOM);
             this.Controls.Add(this.btnagregarCOM);
@@ -180,5 +254,12 @@
         private Button btnactualizarCOM;
         private Button btnagregarCOM;
         private DataGridView dgvcomprasCOM;
+        private Button btnmenuCOM;
+        private ComboBox cbproductoCOM;
+        private Label label6;
+        private TextBox txtpreciocostoCOM;
+        private Label label4;
+        private TextBox txtcantidadCOM;
+        private Label label5;
     }
 }

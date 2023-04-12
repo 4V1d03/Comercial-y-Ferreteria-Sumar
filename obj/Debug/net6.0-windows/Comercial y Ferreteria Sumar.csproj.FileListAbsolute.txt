@@ -26,7 +26,6 @@ C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\C
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Productos.resources
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Proveedores.resources
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Sucursales.resources
-C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Usuarios.resources
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Ventas.resources
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.GenerateResource.cache
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.GeneratedMSBuildEditorConfig.editorconfig
@@ -47,3 +46,4 @@ C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\bin\Debug\net6.0-windows\r
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Compras.resources
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Puestros.resources
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.CopyComplete
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Categorias.resources

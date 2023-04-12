@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnmenuSU = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvsucursalesSU)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +52,7 @@
             this.btneliminarSU.TabIndex = 32;
             this.btneliminarSU.Text = "Eliminar";
             this.btneliminarSU.UseVisualStyleBackColor = true;
+            this.btneliminarSU.Click += new System.EventHandler(this.btneliminarSU_Click);
             // 
             // btnactualizarSU
             // 
@@ -61,6 +63,7 @@
             this.btnactualizarSU.TabIndex = 31;
             this.btnactualizarSU.Text = "Actualizar";
             this.btnactualizarSU.UseVisualStyleBackColor = true;
+            this.btnactualizarSU.Click += new System.EventHandler(this.btnactualizarSU_Click);
             // 
             // btnagregarSU
             // 
@@ -71,17 +74,22 @@
             this.btnagregarSU.TabIndex = 30;
             this.btnagregarSU.Text = "Agregar";
             this.btnagregarSU.UseVisualStyleBackColor = true;
+            this.btnagregarSU.Click += new System.EventHandler(this.btnagregarSU_Click);
             // 
             // dgvsucursalesSU
             // 
+            this.dgvsucursalesSU.AllowUserToAddRows = false;
+            this.dgvsucursalesSU.AllowUserToDeleteRows = false;
             this.dgvsucursalesSU.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvsucursalesSU.Location = new System.Drawing.Point(31, 296);
             this.dgvsucursalesSU.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvsucursalesSU.Name = "dgvsucursalesSU";
+            this.dgvsucursalesSU.ReadOnly = true;
             this.dgvsucursalesSU.RowHeadersWidth = 51;
             this.dgvsucursalesSU.RowTemplate.Height = 25;
             this.dgvsucursalesSU.Size = new System.Drawing.Size(721, 209);
             this.dgvsucursalesSU.TabIndex = 29;
+            this.dgvsucursalesSU.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvsucursalesSU_CellClick);
             // 
             // txtdescripcionPROD
             // 
@@ -144,11 +152,23 @@
             this.label10.TabIndex = 49;
             this.label10.Text = "Adminitración de Sucursales";
             // 
+            // btnmenuSU
+            // 
+            this.btnmenuSU.Location = new System.Drawing.Point(837, 13);
+            this.btnmenuSU.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnmenuSU.Name = "btnmenuSU";
+            this.btnmenuSU.Size = new System.Drawing.Size(119, 52);
+            this.btnmenuSU.TabIndex = 77;
+            this.btnmenuSU.Text = "Menu";
+            this.btnmenuSU.UseVisualStyleBackColor = true;
+            this.btnmenuSU.Click += new System.EventHandler(this.btnmenuSU_Click);
+            // 
             // Sucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(992, 546);
+            this.Controls.Add(this.btnmenuSU);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtdescripcionPROD);
             this.Controls.Add(this.label6);
@@ -160,9 +180,10 @@
             this.Controls.Add(this.btnactualizarSU);
             this.Controls.Add(this.btnagregarSU);
             this.Controls.Add(this.dgvsucursalesSU);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Sucursales";
             this.Text = "Sucursales";
+            this.Load += new System.EventHandler(this.Sucursales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvsucursalesSU)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,5 +203,6 @@
         private Label label4;
         private Label label3;
         private Label label10;
+        private Button btnmenuSU;
     }
 }

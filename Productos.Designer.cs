@@ -45,6 +45,10 @@
             this.txtdescripcionPROD = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.btnmenuPROD = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvproductosPROD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +61,7 @@
             this.btneliminarProd.TabIndex = 28;
             this.btneliminarProd.Text = "Eliminar";
             this.btneliminarProd.UseVisualStyleBackColor = true;
+            this.btneliminarProd.Click += new System.EventHandler(this.btneliminarProd_Click);
             // 
             // btnactualizarProd
             // 
@@ -67,6 +72,7 @@
             this.btnactualizarProd.TabIndex = 27;
             this.btnactualizarProd.Text = "Actualizar";
             this.btnactualizarProd.UseVisualStyleBackColor = true;
+            this.btnactualizarProd.Click += new System.EventHandler(this.btnactualizarProd_Click);
             // 
             // btnagregarPROD
             // 
@@ -77,6 +83,7 @@
             this.btnagregarPROD.TabIndex = 26;
             this.btnagregarPROD.Text = "Agregar";
             this.btnagregarPROD.UseVisualStyleBackColor = true;
+            this.btnagregarPROD.Click += new System.EventHandler(this.btnagregarPROD_Click);
             // 
             // dgvproductosPROD
             // 
@@ -88,6 +95,7 @@
             this.dgvproductosPROD.RowTemplate.Height = 25;
             this.dgvproductosPROD.Size = new System.Drawing.Size(721, 209);
             this.dgvproductosPROD.TabIndex = 25;
+            this.dgvproductosPROD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproductosPROD_CellClick);
             // 
             // cbcategoriaPROD
             // 
@@ -201,11 +209,52 @@
             this.label10.TabIndex = 41;
             this.label10.Text = "Adminitración de Productos";
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.Location = new System.Drawing.Point(347, 337);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(100, 35);
+            this.btnbuscar.TabIndex = 75;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(54, 344);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 20);
+            this.label7.TabIndex = 74;
+            this.label7.Text = "Buscar :";
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.Location = new System.Drawing.Point(112, 341);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(229, 27);
+            this.txtbuscar.TabIndex = 73;
+            // 
+            // btnmenuPROD
+            // 
+            this.btnmenuPROD.Location = new System.Drawing.Point(786, 15);
+            this.btnmenuPROD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnmenuPROD.Name = "btnmenuPROD";
+            this.btnmenuPROD.Size = new System.Drawing.Size(119, 52);
+            this.btnmenuPROD.TabIndex = 76;
+            this.btnmenuPROD.Text = "Menu";
+            this.btnmenuPROD.UseVisualStyleBackColor = true;
+            this.btnmenuPROD.Click += new System.EventHandler(this.btnmenuPROD_Click);
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(942, 621);
+            this.Controls.Add(this.btnmenuPROD);
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtdescripcionPROD);
             this.Controls.Add(this.label6);
@@ -251,5 +300,9 @@
         private TextBox txtdescripcionPROD;
         private Label label6;
         private Label label10;
+        private Button btnbuscar;
+        private Label label7;
+        private TextBox txtbuscar;
+        private Button btnmenuPROD;
     }
 }

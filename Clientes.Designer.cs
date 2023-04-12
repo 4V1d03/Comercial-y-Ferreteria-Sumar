@@ -42,6 +42,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.btnmenuCL = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvclientesCL)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,6 +94,7 @@
             this.dgvclientesCL.RowTemplate.Height = 29;
             this.dgvclientesCL.Size = new System.Drawing.Size(746, 259);
             this.dgvclientesCL.TabIndex = 32;
+            this.dgvclientesCL.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvclientesCL_CellClick);
             // 
             // txtapellidosCL
             // 
@@ -173,11 +178,52 @@
             this.label9.TabIndex = 50;
             this.label9.Text = "Administracion de Clientes";
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.Location = new System.Drawing.Point(327, 258);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(100, 35);
+            this.btnbuscar.TabIndex = 72;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(34, 265);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 20);
+            this.label3.TabIndex = 71;
+            this.label3.Text = "Buscar :";
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.Location = new System.Drawing.Point(92, 262);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(229, 27);
+            this.txtbuscar.TabIndex = 70;
+            // 
+            // btnmenuCL
+            // 
+            this.btnmenuCL.Location = new System.Drawing.Point(813, 16);
+            this.btnmenuCL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnmenuCL.Name = "btnmenuCL";
+            this.btnmenuCL.Size = new System.Drawing.Size(119, 52);
+            this.btnmenuCL.TabIndex = 77;
+            this.btnmenuCL.Text = "Menu";
+            this.btnmenuCL.UseVisualStyleBackColor = true;
+            this.btnmenuCL.Click += new System.EventHandler(this.btnmenuCL_Click);
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 629);
+            this.Controls.Add(this.btnmenuCL);
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txttelefonoCL);
             this.Controls.Add(this.txtcorreoCL);
@@ -217,5 +263,9 @@
         private Label label7;
         private Label label8;
         private Label label9;
+        private Button btnbuscar;
+        private Label label3;
+        private TextBox txtbuscar;
+        private Button btnmenuCL;
     }
 }

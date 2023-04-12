@@ -19,13 +19,13 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void Menu_Load(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
         }
 
         private void btnusuariosMEN_Click(object sender, EventArgs e)
         {
-            Usuarios usuarios = new Usuarios();
-            usuarios.Show();
+            //Usuarios usuarios = new Usuarios();
+            //usuarios.Show();
             this.Hide();
         }
 

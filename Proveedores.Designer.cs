@@ -45,6 +45,7 @@
             this.dgvproveedoresPROV = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.epPROV = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnmenuPROV = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvproveedoresPROV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epPROV)).BeginInit();
             this.SuspendLayout();
@@ -201,11 +202,23 @@
             // 
             this.epPROV.ContainerControl = this;
             // 
+            // btnmenuPROV
+            // 
+            this.btnmenuPROV.Location = new System.Drawing.Point(776, 13);
+            this.btnmenuPROV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnmenuPROV.Name = "btnmenuPROV";
+            this.btnmenuPROV.Size = new System.Drawing.Size(119, 52);
+            this.btnmenuPROV.TabIndex = 77;
+            this.btnmenuPROV.Text = "Menu";
+            this.btnmenuPROV.UseVisualStyleBackColor = true;
+            this.btnmenuPROV.Click += new System.EventHandler(this.btnmenuPROV_Click);
+            // 
             // Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(942, 573);
+            this.Controls.Add(this.btnmenuPROV);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btneliminarPROV);
             this.Controls.Add(this.btnactualizarPROV);
@@ -249,5 +262,6 @@
         private DataGridView dgvproveedoresPROV;
         private Label label10;
         private ErrorProvider epPROV;
+        private Button btnmenuPROV;
     }
 }

@@ -22,7 +22,32 @@ namespace Comercial_y_Ferreteria_Sumar
 
         }
 
-        
+        private void btnmenuVT_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show(this);
+            this.Hide();
+        }
+
+        private void btnagregarVT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnactualizarVT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btneliminarVT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvventasVT_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 
 }

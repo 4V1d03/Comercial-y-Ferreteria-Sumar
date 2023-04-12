@@ -76,6 +76,7 @@ namespace Comercial_y_Ferreteria_Sumar
             this.CenterToScreen();
             c.mostrarproveedores(dgvproveedoresPROV);
 
+            /**
             if (txtnombrePROV.Text != "" && txtrtnPROV.Text != "" && txtdireccionPROV.Text != "" && txttelefonoPROV.Text != "" && txtcorreoPROV.Text != "")
             {
                 btnagregarPROV.Enabled = true;              
@@ -83,8 +84,9 @@ namespace Comercial_y_Ferreteria_Sumar
             else
             {
                 btnagregarPROV.Enabled = false;
-                MessageBox.Show("ya se lleno", "puto");
+                
             }
+            **/
         }
 
         private void txtnombrePROV_KeyPress(object sender, KeyPressEventArgs e)
@@ -125,6 +127,13 @@ namespace Comercial_y_Ferreteria_Sumar
         private void txttelefonoPROV_Validating(object sender, System.ComponentModel.CancelEventArgs e)
         {
             val.validarvacios(txttelefonoPROV, epPROV);
+        }
+
+        private void btnmenuPROV_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show(this);
+            this.Hide();
         }
     }
 }

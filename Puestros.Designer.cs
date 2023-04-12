@@ -32,10 +32,14 @@
             this.btneliminarCOM = new System.Windows.Forms.Button();
             this.btnactualizarCOM = new System.Windows.Forms.Button();
             this.btnagregarCOM = new System.Windows.Forms.Button();
-            this.dgvcomprasCOM = new System.Windows.Forms.DataGridView();
-            this.txtnombrePROV = new System.Windows.Forms.TextBox();
+            this.dgvpuestosPUE = new System.Windows.Forms.DataGridView();
+            this.txtnombrePUE = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvcomprasCOM)).BeginInit();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.btnmenuPUE = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvpuestosPUE)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -57,6 +61,7 @@
             this.btneliminarCOM.TabIndex = 60;
             this.btneliminarCOM.Text = "Eliminar";
             this.btneliminarCOM.UseVisualStyleBackColor = true;
+            this.btneliminarCOM.Click += new System.EventHandler(this.btneliminarCOM_Click);
             // 
             // btnactualizarCOM
             // 
@@ -67,6 +72,7 @@
             this.btnactualizarCOM.TabIndex = 59;
             this.btnactualizarCOM.Text = "Actualizar";
             this.btnactualizarCOM.UseVisualStyleBackColor = true;
+            this.btnactualizarCOM.Click += new System.EventHandler(this.btnactualizarCOM_Click);
             // 
             // btnagregarCOM
             // 
@@ -77,25 +83,27 @@
             this.btnagregarCOM.TabIndex = 58;
             this.btnagregarCOM.Text = "Agregar";
             this.btnagregarCOM.UseVisualStyleBackColor = true;
+            this.btnagregarCOM.Click += new System.EventHandler(this.btnagregarCOM_Click);
             // 
-            // dgvcomprasCOM
+            // dgvpuestosPUE
             // 
-            this.dgvcomprasCOM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvcomprasCOM.Location = new System.Drawing.Point(48, 337);
-            this.dgvcomprasCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dgvcomprasCOM.Name = "dgvcomprasCOM";
-            this.dgvcomprasCOM.RowHeadersWidth = 51;
-            this.dgvcomprasCOM.RowTemplate.Height = 25;
-            this.dgvcomprasCOM.Size = new System.Drawing.Size(721, 209);
-            this.dgvcomprasCOM.TabIndex = 57;
+            this.dgvpuestosPUE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvpuestosPUE.Location = new System.Drawing.Point(48, 337);
+            this.dgvpuestosPUE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvpuestosPUE.Name = "dgvpuestosPUE";
+            this.dgvpuestosPUE.RowHeadersWidth = 51;
+            this.dgvpuestosPUE.RowTemplate.Height = 25;
+            this.dgvpuestosPUE.Size = new System.Drawing.Size(721, 209);
+            this.dgvpuestosPUE.TabIndex = 57;
+            this.dgvpuestosPUE.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpuestosPUE_CellClick);
             // 
-            // txtnombrePROV
+            // txtnombrePUE
             // 
-            this.txtnombrePROV.Location = new System.Drawing.Point(335, 195);
-            this.txtnombrePROV.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtnombrePROV.Name = "txtnombrePROV";
-            this.txtnombrePROV.Size = new System.Drawing.Size(242, 27);
-            this.txtnombrePROV.TabIndex = 62;
+            this.txtnombrePUE.Location = new System.Drawing.Point(335, 195);
+            this.txtnombrePUE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtnombrePUE.Name = "txtnombrePUE";
+            this.txtnombrePUE.Size = new System.Drawing.Size(242, 27);
+            this.txtnombrePUE.TabIndex = 62;
             // 
             // label1
             // 
@@ -106,21 +114,63 @@
             this.label1.TabIndex = 61;
             this.label1.Text = "Nombre Puesto";
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.Location = new System.Drawing.Point(346, 296);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(100, 35);
+            this.btnbuscar.TabIndex = 69;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(53, 303);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 20);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Buscar :";
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.Location = new System.Drawing.Point(111, 300);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(229, 27);
+            this.txtbuscar.TabIndex = 67;
+            // 
+            // btnmenuPUE
+            // 
+            this.btnmenuPUE.Location = new System.Drawing.Point(791, 21);
+            this.btnmenuPUE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnmenuPUE.Name = "btnmenuPUE";
+            this.btnmenuPUE.Size = new System.Drawing.Size(119, 52);
+            this.btnmenuPUE.TabIndex = 77;
+            this.btnmenuPUE.Text = "Menu";
+            this.btnmenuPUE.UseVisualStyleBackColor = true;
+            this.btnmenuPUE.Click += new System.EventHandler(this.btnmenuPUE_Click);
+            // 
             // Puestros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(963, 582);
-            this.Controls.Add(this.txtnombrePROV);
+            this.Controls.Add(this.btnmenuPUE);
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtbuscar);
+            this.Controls.Add(this.txtnombrePUE);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btneliminarCOM);
             this.Controls.Add(this.btnactualizarCOM);
             this.Controls.Add(this.btnagregarCOM);
-            this.Controls.Add(this.dgvcomprasCOM);
+            this.Controls.Add(this.dgvpuestosPUE);
             this.Controls.Add(this.label10);
             this.Name = "Puestros";
             this.Text = "Puestros";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvcomprasCOM)).EndInit();
+            this.Load += new System.EventHandler(this.Puestros_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvpuestosPUE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,8 +182,12 @@
         private Button btneliminarCOM;
         private Button btnactualizarCOM;
         private Button btnagregarCOM;
-        private DataGridView dgvcomprasCOM;
-        private TextBox txtnombrePROV;
+        private DataGridView dgvpuestosPUE;
+        private TextBox txtnombrePUE;
         private Label label1;
+        private Button btnbuscar;
+        private Label label2;
+        private TextBox txtbuscar;
+        private Button btnmenuPUE;
     }
 }
