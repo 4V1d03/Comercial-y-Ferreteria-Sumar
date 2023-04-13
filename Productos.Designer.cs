@@ -203,11 +203,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(199, 26);
+            this.label10.Location = new System.Drawing.Point(239, 26);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(413, 41);
+            this.label10.Size = new System.Drawing.Size(356, 41);
             this.label10.TabIndex = 41;
-            this.label10.Text = "Adminitración de Productos";
+            this.label10.Text = "Inventario de Productos";
             // 
             // btnbuscar
             // 

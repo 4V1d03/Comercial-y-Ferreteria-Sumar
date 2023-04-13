@@ -26,7 +26,7 @@ namespace Comercial_y_Ferreteria_Sumar
         {
             c.abrir();
 
-            c.mostrarProductos(dgvproductosPROD);
+            c.mostrarproductosPROD(dgvproductosPROD);
             c.mostrarCBcategoria(cbcategoriaPROD);
             c.mostrarCBproveedor(cbproveedorPROD);
 
@@ -38,24 +38,33 @@ namespace Comercial_y_Ferreteria_Sumar
         {
             c.abrir();
 
+            MessageBox.Show(c.agregarProductos((int)cbcategoriaPROD.SelectedValue, (int)cbproveedorPROD.SelectedValue, Convert.ToDouble(txtprecioPROD.Text), txtnombrePROD.Text, txtdescripcionPROD.Text, Convert.ToInt32(txtExistenciaPROD.Text)));
 
             c.cerrar();
+
+            c.mostrarproductosPROD(dgvproductosPROD);
         }
 
         private void btnactualizarProd_Click(object sender, EventArgs e)
         {
             c.abrir();
 
+            MessageBox.Show(c.actualizarProductos((int)cbcategoriaPROD.SelectedValue, (int)cbproveedorPROD.SelectedValue, Convert.ToDouble(txtprecioPROD.Text), txtnombrePROD.Text, txtdescripcionPROD.Text, Convert.ToInt32(txtExistenciaPROD.Text), codigo));
 
             c.cerrar();
+
+            c.mostrarproductosPROD(dgvproductosPROD);
         }
 
         private void btneliminarProd_Click(object sender, EventArgs e)
         {
             c.abrir();
 
+            MessageBox.Show(c.eliminarProductos(codigo));
 
             c.cerrar();
+
+            c.mostrarproductosPROD(dgvproductosPROD);
         }
 
         private void dgvproductosPROD_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -63,7 +72,7 @@ namespace Comercial_y_Ferreteria_Sumar
             posicion = dgvproductosPROD.CurrentRow.Index;
 
             codigo = Convert.ToInt32(dgvproductosPROD.Rows[posicion].Cells[0].Value);
-            cbcategoriaPROD.SelectedItem = dgvproductosPROD.Rows[posicion].Cells[1].Value.ToString();
+            cbcategoriaPROD.DisplayMember = dgvproductosPROD.Rows[posicion].Cells[1].Value.ToString();
             cbproveedorPROD.SelectedItem = dgvproductosPROD.Rows[posicion].Cells[2].Value.ToString();
             txtprecioPROD.Text = dgvproductosPROD.Rows[posicion].Cells[3].Value.ToString();
             txtnombrePROD.Text = dgvproductosPROD.Rows[posicion].Cells[4].Value.ToString();
@@ -78,11 +87,11 @@ namespace Comercial_y_Ferreteria_Sumar
 
             if (txtbuscar.Text == "")
             {
-                c.mostrarclientes(dgvproductosPROD);
+                c.mostrarproductosPROD(dgvproductosPROD);
             }
             else
             {
-                c.buscaecliente(dgvproductosPROD, txtbuscar.Text);
+                c.buscarproductos(dgvproductosPROD, txtbuscar.Text);
             }
 
             c.cerrar();
@@ -94,5 +103,7 @@ namespace Comercial_y_Ferreteria_Sumar
             menu.Show(this);
             this.Hide();
         }
+
+
     }
 }

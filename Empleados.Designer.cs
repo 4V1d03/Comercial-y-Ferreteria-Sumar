@@ -51,7 +51,6 @@
             this.txtcorreoEMP = new System.Windows.Forms.TextBox();
             this.cbjornadaEMP = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtcontraEMP = new System.Windows.Forms.TextBox();
             this.txtusuarioEMP = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -61,6 +60,9 @@
             this.txtsalarioEMP = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnmenuEMP = new System.Windows.Forms.Button();
+            this.btnbuscar = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtbuscar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvempleadosEMP)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,7 +106,7 @@
             this.dgvempleadosEMP.AllowUserToAddRows = false;
             this.dgvempleadosEMP.AllowUserToDeleteRows = false;
             this.dgvempleadosEMP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvempleadosEMP.Location = new System.Drawing.Point(46, 508);
+            this.dgvempleadosEMP.Location = new System.Drawing.Point(56, 546);
             this.dgvempleadosEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvempleadosEMP.Name = "dgvempleadosEMP";
             this.dgvempleadosEMP.ReadOnly = true;
@@ -204,7 +206,7 @@
             // 
             // btnagregarEMP
             // 
-            this.btnagregarEMP.Location = new System.Drawing.Point(1080, 508);
+            this.btnagregarEMP.Location = new System.Drawing.Point(1090, 546);
             this.btnagregarEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnagregarEMP.Name = "btnagregarEMP";
             this.btnagregarEMP.Size = new System.Drawing.Size(119, 52);
@@ -215,7 +217,7 @@
             // 
             // btnActualizarEMP
             // 
-            this.btnActualizarEMP.Location = new System.Drawing.Point(1080, 587);
+            this.btnActualizarEMP.Location = new System.Drawing.Point(1090, 625);
             this.btnActualizarEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnActualizarEMP.Name = "btnActualizarEMP";
             this.btnActualizarEMP.Size = new System.Drawing.Size(119, 52);
@@ -226,7 +228,7 @@
             // 
             // btneliminarEMP
             // 
-            this.btneliminarEMP.Location = new System.Drawing.Point(1080, 665);
+            this.btneliminarEMP.Location = new System.Drawing.Point(1090, 703);
             this.btneliminarEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btneliminarEMP.Name = "btneliminarEMP";
             this.btneliminarEMP.Size = new System.Drawing.Size(119, 52);
@@ -280,15 +282,6 @@
             this.label9.Size = new System.Drawing.Size(61, 20);
             this.label9.TabIndex = 26;
             this.label9.Text = "Jornada";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(828, 85);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(362, 191);
-            this.groupBox1.TabIndex = 28;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Creación de Usuario";
             // 
             // txtcontraEMP
             // 
@@ -360,7 +353,7 @@
             // 
             // btnmenuEMP
             // 
-            this.btnmenuEMP.Location = new System.Drawing.Point(1080, 26);
+            this.btnmenuEMP.Location = new System.Drawing.Point(1090, 459);
             this.btnmenuEMP.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnmenuEMP.Name = "btnmenuEMP";
             this.btnmenuEMP.Size = new System.Drawing.Size(119, 52);
@@ -369,11 +362,40 @@
             this.btnmenuEMP.UseVisualStyleBackColor = true;
             this.btnmenuEMP.Click += new System.EventHandler(this.btnmenuEMP_Click);
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.Location = new System.Drawing.Point(354, 494);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(100, 35);
+            this.btnbuscar.TabIndex = 78;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(61, 501);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(59, 20);
+            this.label15.TabIndex = 77;
+            this.label15.Text = "Buscar :";
+            // 
+            // txtbuscar
+            // 
+            this.txtbuscar.Location = new System.Drawing.Point(119, 498);
+            this.txtbuscar.Name = "txtbuscar";
+            this.txtbuscar.Size = new System.Drawing.Size(229, 27);
+            this.txtbuscar.TabIndex = 76;
+            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1225, 741);
+            this.ClientSize = new System.Drawing.Size(1225, 782);
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtbuscar);
             this.Controls.Add(this.btnmenuEMP);
             this.Controls.Add(this.txtcontraEMP);
             this.Controls.Add(this.txtusuarioEMP);
@@ -383,7 +405,6 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtdireccionEMP);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.cbjornadaEMP);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
@@ -442,7 +463,6 @@
         private TextBox txtcorreoEMP;
         private ComboBox cbjornadaEMP;
         private Label label9;
-        private GroupBox groupBox1;
         private TextBox txtcontraEMP;
         private TextBox txtusuarioEMP;
         private Label label12;
@@ -452,5 +472,8 @@
         private TextBox txtsalarioEMP;
         private Label label14;
         private Button btnmenuEMP;
+        private Button btnbuscar;
+        private Label label15;
+        private TextBox txtbuscar;
     }
 }

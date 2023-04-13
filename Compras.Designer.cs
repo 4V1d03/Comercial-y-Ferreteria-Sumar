@@ -46,12 +46,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtcantidadCOM = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnComprar = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomprasCOM)).BeginInit();
             this.SuspendLayout();
             // 
             // dtpfechaCOM
             // 
-            this.dtpfechaCOM.Location = new System.Drawing.Point(190, 179);
+            this.dtpfechaCOM.Location = new System.Drawing.Point(190, 216);
             this.dtpfechaCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpfechaCOM.Name = "dtpfechaCOM";
             this.dtpfechaCOM.Size = new System.Drawing.Size(209, 27);
@@ -60,7 +65,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 184);
+            this.label3.Location = new System.Drawing.Point(137, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 20);
             this.label3.TabIndex = 23;
@@ -112,48 +117,60 @@
             // 
             // btneliminarCOM
             // 
-            this.btneliminarCOM.Location = new System.Drawing.Point(805, 529);
+            this.btneliminarCOM.Location = new System.Drawing.Point(804, 586);
             this.btneliminarCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btneliminarCOM.Name = "btneliminarCOM";
             this.btneliminarCOM.Size = new System.Drawing.Size(119, 52);
             this.btneliminarCOM.TabIndex = 56;
             this.btneliminarCOM.Text = "Eliminar";
             this.btneliminarCOM.UseVisualStyleBackColor = true;
+            this.btneliminarCOM.Click += new System.EventHandler(this.btneliminarCOM_Click);
             // 
             // btnactualizarCOM
             // 
-            this.btnactualizarCOM.Location = new System.Drawing.Point(805, 451);
+            this.btnactualizarCOM.Location = new System.Drawing.Point(804, 508);
             this.btnactualizarCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnactualizarCOM.Name = "btnactualizarCOM";
             this.btnactualizarCOM.Size = new System.Drawing.Size(119, 52);
             this.btnactualizarCOM.TabIndex = 55;
             this.btnactualizarCOM.Text = "Actualizar";
             this.btnactualizarCOM.UseVisualStyleBackColor = true;
+            this.btnactualizarCOM.Click += new System.EventHandler(this.btnactualizarCOM_Click);
             // 
             // btnagregarCOM
             // 
-            this.btnagregarCOM.Location = new System.Drawing.Point(805, 372);
+            this.btnagregarCOM.Location = new System.Drawing.Point(804, 429);
             this.btnagregarCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnagregarCOM.Name = "btnagregarCOM";
             this.btnagregarCOM.Size = new System.Drawing.Size(119, 52);
             this.btnagregarCOM.TabIndex = 54;
             this.btnagregarCOM.Text = "Agregar";
             this.btnagregarCOM.UseVisualStyleBackColor = true;
+            this.btnagregarCOM.Click += new System.EventHandler(this.btnagregarCOM_Click);
             // 
             // dgvcomprasCOM
             // 
+            this.dgvcomprasCOM.AllowUserToAddRows = false;
+            this.dgvcomprasCOM.AllowUserToDeleteRows = false;
             this.dgvcomprasCOM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvcomprasCOM.Location = new System.Drawing.Point(62, 372);
+            this.dgvcomprasCOM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dgvcomprasCOM.Location = new System.Drawing.Point(61, 429);
             this.dgvcomprasCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvcomprasCOM.Name = "dgvcomprasCOM";
+            this.dgvcomprasCOM.ReadOnly = true;
             this.dgvcomprasCOM.RowHeadersWidth = 51;
             this.dgvcomprasCOM.RowTemplate.Height = 25;
             this.dgvcomprasCOM.Size = new System.Drawing.Size(721, 209);
             this.dgvcomprasCOM.TabIndex = 53;
+            this.dgvcomprasCOM.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcomprasCOM_CellClick);
             // 
             // btnmenuCOM
             // 
-            this.btnmenuCOM.Location = new System.Drawing.Point(888, 22);
+            this.btnmenuCOM.Location = new System.Drawing.Point(805, 22);
             this.btnmenuCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnmenuCOM.Name = "btnmenuCOM";
             this.btnmenuCOM.Size = new System.Drawing.Size(119, 52);
@@ -165,7 +182,7 @@
             // cbproductoCOM
             // 
             this.cbproductoCOM.FormattingEnabled = true;
-            this.cbproductoCOM.Location = new System.Drawing.Point(530, 176);
+            this.cbproductoCOM.Location = new System.Drawing.Point(530, 213);
             this.cbproductoCOM.Name = "cbproductoCOM";
             this.cbproductoCOM.Size = new System.Drawing.Size(205, 28);
             this.cbproductoCOM.TabIndex = 80;
@@ -173,7 +190,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(455, 179);
+            this.label6.Location = new System.Drawing.Point(455, 216);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 20);
             this.label6.TabIndex = 79;
@@ -181,7 +198,7 @@
             // 
             // txtpreciocostoCOM
             // 
-            this.txtpreciocostoCOM.Location = new System.Drawing.Point(190, 234);
+            this.txtpreciocostoCOM.Location = new System.Drawing.Point(186, 302);
             this.txtpreciocostoCOM.Name = "txtpreciocostoCOM";
             this.txtpreciocostoCOM.Size = new System.Drawing.Size(209, 27);
             this.txtpreciocostoCOM.TabIndex = 82;
@@ -189,7 +206,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(92, 237);
+            this.label4.Location = new System.Drawing.Point(88, 305);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 20);
             this.label4.TabIndex = 81;
@@ -197,7 +214,7 @@
             // 
             // txtcantidadCOM
             // 
-            this.txtcantidadCOM.Location = new System.Drawing.Point(530, 230);
+            this.txtcantidadCOM.Location = new System.Drawing.Point(526, 298);
             this.txtcantidadCOM.Name = "txtcantidadCOM";
             this.txtcantidadCOM.Size = new System.Drawing.Size(209, 27);
             this.txtcantidadCOM.TabIndex = 84;
@@ -205,17 +222,60 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(455, 233);
+            this.label5.Location = new System.Drawing.Point(451, 301);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 20);
             this.label5.TabIndex = 83;
             this.label5.Text = "Cantidad";
             // 
+            // btnComprar
+            // 
+            this.btnComprar.Location = new System.Drawing.Point(804, 355);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnComprar.Name = "btnComprar";
+            this.btnComprar.Size = new System.Drawing.Size(119, 52);
+            this.btnComprar.TabIndex = 85;
+            this.btnComprar.Text = "Comprar";
+            this.btnComprar.UseVisualStyleBackColor = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "CodigoCompra";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "CodigoProducto";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "PrecioCosto";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Cantidad";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 125;
+            // 
             // Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1032, 629);
+            this.ClientSize = new System.Drawing.Size(951, 662);
+            this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.txtcantidadCOM);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtpreciocostoCOM);
@@ -236,6 +296,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Compras";
             this.Text = "Compras";
+            this.Load += new System.EventHandler(this.Compras_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomprasCOM)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -261,5 +322,10 @@
         private Label label4;
         private TextBox txtcantidadCOM;
         private Label label5;
+        private Button btnComprar;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
     }
 }

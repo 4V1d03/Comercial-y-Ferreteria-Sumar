@@ -56,7 +56,7 @@
             this.btnusuariosMEN.Name = "btnusuariosMEN";
             this.btnusuariosMEN.Size = new System.Drawing.Size(160, 90);
             this.btnusuariosMEN.TabIndex = 1;
-            this.btnusuariosMEN.Text = "Usuarios";
+            this.btnusuariosMEN.Text = "Compras";
             this.btnusuariosMEN.UseVisualStyleBackColor = true;
             this.btnusuariosMEN.Click += new System.EventHandler(this.btnusuariosMEN_Click);
             // 
@@ -133,7 +133,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(393, 28);
+            this.label1.Location = new System.Drawing.Point(388, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 9;

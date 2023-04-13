@@ -246,7 +246,7 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
             string respuesta = "";
             try
             {
-                cmd = new SqlCommand("insert into Empleado(CodigoSucursal, CodigoJornada, CodigoPuesto, Nombres, Apellidos, Identidad, FechaNacimiento, Correo, Telefono, Direcion, Usuario, Contraseña, Salario) values( '" + codigosuc + "','" + codigojor + "','" + codigopue + "','" + nombre + "', '" + apellido + "','" + rtn + "','" + nacimiento + "','" + correo + "','" + telefono + "','" + direccion + "','" + usuario + "','" + contra + "','" + salario + "' )", cn);
+                cmd = new SqlCommand("insert into Empleado(CodigoSucursal, CodigoJornada, CodigoPuesto, Nombres, Apellidos, Identidad, FechaNacimiento, Correo, Telefono, Direccion, Usuario, Contraseña, Salario) values( '" + codigosuc + "','" + codigojor + "','" + codigopue + "','" + nombre + "', '" + apellido + "','" + rtn + "','" + nacimiento + "','" + correo + "','" + telefono + "','" + direccion + "','" + usuario + "','" + contra + "','" + salario + "' )", cn);
                 cmd.ExecuteNonQuery();
 
                 respuesta = "el registro fue insertado";
@@ -258,6 +258,71 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
 
             return respuesta;
         }
+
+        public string actualizarempleado(int codigosuc, int codigojor, int codigopue, string nombre, string apellido,
+        string rtn, DateTime nacimiento, string correo, string telefono, string direccion, string usuario, string contra,
+        double salario, int codigoemp)
+        {
+            string respuesta = "";
+
+            try
+            {
+                cmd = new SqlCommand("update Empleado set CodigoSucursal = '" + codigosuc + "', CodigoJornada = '" + codigojor + "', CodigoPuesto = '" + codigopue + "', Nombres = '" + nombre + "', Apellidos = '" + apellido + "', Identidad = '" + rtn + "', FechaNacimiento = '" + nacimiento + "', Correo = '" + correo + "', Telefono = '" + telefono + "', Direccion = '" + direccion + "', Usuario = '" + usuario + "', Contraseña = '" + contra + "', Salario = '" + salario + "' where CodigoEmpleado = '" + codigoemp + "'  ", cn);
+                cmd.ExecuteNonQuery();
+
+                respuesta = "El registro se actualizo!";
+
+            }
+            catch (Exception ex)
+            {
+
+                respuesta = "Error no se actualizo el registro!" + ex.ToString();
+
+            }
+
+            return respuesta;
+        }
+
+        public string eliminarempleado(int codigo)
+        {
+            string respuesta = "";
+
+            try
+            {
+                cmd = new SqlCommand("delete from Empleado where CodigoEmpleado = '" + codigo + "' ", cn);
+                cmd.ExecuteNonQuery();
+
+                respuesta = "El registro se elimino!!";
+            }
+            catch (Exception ex)
+            {
+
+                respuesta = "Error no se Elimino!! " + ex.ToString();
+            }
+
+            return respuesta;
+        }
+
+        public void buscarempleados(DataGridView data, string nombre)
+        {
+            try
+            {
+                string consulta = "select * from Empleado where Nombres= '" + nombre + "'";
+
+                da = new SqlDataAdapter(consulta, cn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                data.DataSource = dt;
+            }
+            catch (Exception)
+            {
+
+
+            }
+        }
+
+
+
 
 
         //Formulario Categorias
@@ -364,7 +429,7 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
 
         //Fomulario Productos
 
-        public void mostrarProductos(DataGridView data)
+        public void mostrarproductosPROD(DataGridView data)
         {
             
             string consulta = "Select * From Productos";
@@ -404,7 +469,7 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
             string respuesta = "";
             try
             {                                                                                                                       
-                cmd = new SqlCommand("insert into Productos(CodigoCategoria, CodigoProveedor, Pecio, Nombre, Descripcion, Existencia) values('" + codigocategoria + "', '"+codigoproveedor+"', '"+precio+"', '"+nombre+"', '"+descripcion+"', '"+existencia+"')", cn);
+                cmd = new SqlCommand("insert into Productos(CodigoCategoria, CodigoProveedor, Precio, Nombre, Descripcion, Existencia) values('" + codigocategoria + "', '" + codigoproveedor + "', '" + precio + "', '" + nombre + "', '" + descripcion + "', '" + existencia + "')", cn);
                 cmd.ExecuteNonQuery();
 
                 respuesta = "el registro fue insertado";
@@ -461,11 +526,11 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
             return respuesta;
         }
 
-        public void buscarproductos(DataGridView data, string nombre)
+        public void buscarproductos(DataGridView data, string nombree)
         {
             try
             {
-                string consulta = "select * from Productos where Nombre= '" + nombre + "'";
+                string consulta = "select * from Productos where Nombre = '" + nombree + "' ";
 
                 da = new SqlDataAdapter(consulta, cn);
                 DataTable dt = new DataTable();
@@ -569,10 +634,51 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
             }
         }
 
+        //Formulario Compras
+        public void mostrardetallecompras(DataGridView data)
+        {
+            string consulta = "Select * From DetalleCompras";
+            da = new SqlDataAdapter(consulta, cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            data.DataSource = dt;
+        }
 
+        public void mostrarCBempleado(ComboBox proveedor)
+        {
+            string consulta = "select * from Empleado";
+            da = new SqlDataAdapter(consulta, cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            proveedor.DataSource = dt;
 
+            proveedor.DisplayMember = "Nombres";
+            proveedor.ValueMember = "CodigoEmpleado";
+        }
 
+        public void mostrarCBProveedor(ComboBox proveedor)
+        {
+            string consulta = "select * from Proveedores";
+            da = new SqlDataAdapter(consulta, cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            proveedor.DataSource = dt;
 
+            proveedor.DisplayMember = "Nombre";
+            proveedor.ValueMember = "CodigoProveedor";
+        }
+
+        public void mostrarCBproducto(ComboBox proveedor)
+        {
+            string consulta = "select * from Productos";
+            da = new SqlDataAdapter(consulta, cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            proveedor.DataSource = dt;
+
+            proveedor.DisplayMember = "Nombre";
+            proveedor.ValueMember = "CodigoProducto";
+        }
 
 
 
