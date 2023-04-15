@@ -87,12 +87,11 @@ namespace Comercial_y_Ferreteria_Sumar
             this.Hide();
         }
 
-
-
-
-
-
-
-
+        private void btncategoriaMEN_Click(object sender, EventArgs e)
+        {
+            Categorias categorias = new Categorias();
+            categorias.Show();
+            this.Hide();
+        }
     }
 }

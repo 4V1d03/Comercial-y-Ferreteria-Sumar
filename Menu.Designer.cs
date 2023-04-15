@@ -38,13 +38,15 @@
             this.btnclientesMEN = new System.Windows.Forms.Button();
             this.btnproductosMEN = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btncategoriaMEN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btncerrarsesionMEN
             // 
-            this.btncerrarsesionMEN.Location = new System.Drawing.Point(159, 140);
+            this.btncerrarsesionMEN.Location = new System.Drawing.Point(665, 396);
+            this.btncerrarsesionMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btncerrarsesionMEN.Name = "btncerrarsesionMEN";
-            this.btncerrarsesionMEN.Size = new System.Drawing.Size(160, 90);
+            this.btncerrarsesionMEN.Size = new System.Drawing.Size(111, 32);
             this.btncerrarsesionMEN.TabIndex = 0;
             this.btncerrarsesionMEN.Text = "Cerrar Sesion";
             this.btncerrarsesionMEN.UseVisualStyleBackColor = true;
@@ -52,9 +54,10 @@
             // 
             // btnusuariosMEN
             // 
-            this.btnusuariosMEN.Location = new System.Drawing.Point(338, 140);
+            this.btnusuariosMEN.Location = new System.Drawing.Point(296, 105);
+            this.btnusuariosMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnusuariosMEN.Name = "btnusuariosMEN";
-            this.btnusuariosMEN.Size = new System.Drawing.Size(160, 90);
+            this.btnusuariosMEN.Size = new System.Drawing.Size(140, 68);
             this.btnusuariosMEN.TabIndex = 1;
             this.btnusuariosMEN.Text = "Compras";
             this.btnusuariosMEN.UseVisualStyleBackColor = true;
@@ -62,9 +65,10 @@
             // 
             // btnempleadosMEN
             // 
-            this.btnempleadosMEN.Location = new System.Drawing.Point(519, 140);
+            this.btnempleadosMEN.Location = new System.Drawing.Point(454, 105);
+            this.btnempleadosMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnempleadosMEN.Name = "btnempleadosMEN";
-            this.btnempleadosMEN.Size = new System.Drawing.Size(160, 90);
+            this.btnempleadosMEN.Size = new System.Drawing.Size(140, 68);
             this.btnempleadosMEN.TabIndex = 2;
             this.btnempleadosMEN.Text = "Empleados";
             this.btnempleadosMEN.UseVisualStyleBackColor = true;
@@ -72,9 +76,10 @@
             // 
             // btnpuestosMEN
             // 
-            this.btnpuestosMEN.Location = new System.Drawing.Point(159, 234);
+            this.btnpuestosMEN.Location = new System.Drawing.Point(139, 176);
+            this.btnpuestosMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnpuestosMEN.Name = "btnpuestosMEN";
-            this.btnpuestosMEN.Size = new System.Drawing.Size(160, 90);
+            this.btnpuestosMEN.Size = new System.Drawing.Size(140, 68);
             this.btnpuestosMEN.TabIndex = 3;
             this.btnpuestosMEN.Text = "Puestos";
             this.btnpuestosMEN.UseVisualStyleBackColor = true;
@@ -82,9 +87,10 @@
             // 
             // btnsucursalesMEN
             // 
-            this.btnsucursalesMEN.Location = new System.Drawing.Point(338, 234);
+            this.btnsucursalesMEN.Location = new System.Drawing.Point(296, 176);
+            this.btnsucursalesMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsucursalesMEN.Name = "btnsucursalesMEN";
-            this.btnsucursalesMEN.Size = new System.Drawing.Size(160, 90);
+            this.btnsucursalesMEN.Size = new System.Drawing.Size(140, 68);
             this.btnsucursalesMEN.TabIndex = 4;
             this.btnsucursalesMEN.Text = "Sucursales";
             this.btnsucursalesMEN.UseVisualStyleBackColor = true;
@@ -92,9 +98,10 @@
             // 
             // btnventasMEN
             // 
-            this.btnventasMEN.Location = new System.Drawing.Point(519, 234);
+            this.btnventasMEN.Location = new System.Drawing.Point(454, 176);
+            this.btnventasMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnventasMEN.Name = "btnventasMEN";
-            this.btnventasMEN.Size = new System.Drawing.Size(160, 90);
+            this.btnventasMEN.Size = new System.Drawing.Size(140, 68);
             this.btnventasMEN.TabIndex = 5;
             this.btnventasMEN.Text = "Ventas";
             this.btnventasMEN.UseVisualStyleBackColor = true;
@@ -102,9 +109,10 @@
             // 
             // btnproveedoresMEN
             // 
-            this.btnproveedoresMEN.Location = new System.Drawing.Point(159, 330);
+            this.btnproveedoresMEN.Location = new System.Drawing.Point(139, 248);
+            this.btnproveedoresMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnproveedoresMEN.Name = "btnproveedoresMEN";
-            this.btnproveedoresMEN.Size = new System.Drawing.Size(160, 90);
+            this.btnproveedoresMEN.Size = new System.Drawing.Size(140, 68);
             this.btnproveedoresMEN.TabIndex = 6;
             this.btnproveedoresMEN.Text = "Proveedores";
             this.btnproveedoresMEN.UseVisualStyleBackColor = true;
@@ -112,9 +120,10 @@
             // 
             // btnclientesMEN
             // 
-            this.btnclientesMEN.Location = new System.Drawing.Point(338, 330);
+            this.btnclientesMEN.Location = new System.Drawing.Point(296, 248);
+            this.btnclientesMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnclientesMEN.Name = "btnclientesMEN";
-            this.btnclientesMEN.Size = new System.Drawing.Size(160, 90);
+            this.btnclientesMEN.Size = new System.Drawing.Size(140, 68);
             this.btnclientesMEN.TabIndex = 7;
             this.btnclientesMEN.Text = "Clientes";
             this.btnclientesMEN.UseVisualStyleBackColor = true;
@@ -122,9 +131,10 @@
             // 
             // btnproductosMEN
             // 
-            this.btnproductosMEN.Location = new System.Drawing.Point(519, 330);
+            this.btnproductosMEN.Location = new System.Drawing.Point(454, 248);
+            this.btnproductosMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnproductosMEN.Name = "btnproductosMEN";
-            this.btnproductosMEN.Size = new System.Drawing.Size(160, 90);
+            this.btnproductosMEN.Size = new System.Drawing.Size(140, 68);
             this.btnproductosMEN.TabIndex = 8;
             this.btnproductosMEN.Text = "Productos";
             this.btnproductosMEN.UseVisualStyleBackColor = true;
@@ -133,17 +143,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(388, 38);
+            this.label1.Location = new System.Drawing.Point(340, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
+            this.label1.Size = new System.Drawing.Size(38, 15);
             this.label1.TabIndex = 9;
             this.label1.Text = "label1";
             // 
+            // btncategoriaMEN
+            // 
+            this.btncategoriaMEN.Location = new System.Drawing.Point(139, 105);
+            this.btncategoriaMEN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btncategoriaMEN.Name = "btncategoriaMEN";
+            this.btncategoriaMEN.Size = new System.Drawing.Size(140, 68);
+            this.btncategoriaMEN.TabIndex = 10;
+            this.btncategoriaMEN.Text = "Categoria";
+            this.btncategoriaMEN.UseVisualStyleBackColor = true;
+            this.btncategoriaMEN.Click += new System.EventHandler(this.btncategoriaMEN_Click);
+            // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 599);
+            this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.btncategoriaMEN);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnproductosMEN);
             this.Controls.Add(this.btnclientesMEN);
@@ -154,7 +176,6 @@
             this.Controls.Add(this.btnempleadosMEN);
             this.Controls.Add(this.btnusuariosMEN);
             this.Controls.Add(this.btncerrarsesionMEN);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
@@ -175,5 +196,6 @@
         private Button btnclientesMEN;
         private Button btnproductosMEN;
         private Label label1;
+        private Button btncategoriaMEN;
     }
 }

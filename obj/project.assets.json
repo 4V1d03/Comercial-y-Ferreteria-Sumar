@@ -470,19 +470,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aguil\\.nuget\\packages\\": {}
+    "C:\\Users\\fabia\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aguil\\OneDrive\\gitHub\\Comercial y ferreteria\\Comercial y Ferreteria Sumar.csproj",
+      "projectUniqueName": "E:\\Github\\Comercial-y-Ferreteria-Sumar\\Comercial y Ferreteria Sumar.csproj",
       "projectName": "Comercial y Ferreteria Sumar",
-      "projectPath": "C:\\Users\\aguil\\OneDrive\\gitHub\\Comercial y ferreteria\\Comercial y Ferreteria Sumar.csproj",
-      "packagesPath": "C:\\Users\\aguil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aguil\\OneDrive\\gitHub\\Comercial y ferreteria\\obj\\",
+      "projectPath": "E:\\Github\\Comercial-y-Ferreteria-Sumar\\Comercial y Ferreteria Sumar.csproj",
+      "packagesPath": "C:\\Users\\fabia\\.nuget\\packages\\",
+      "outputPath": "E:\\Github\\Comercial-y-Ferreteria-Sumar\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\aguil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fabia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
