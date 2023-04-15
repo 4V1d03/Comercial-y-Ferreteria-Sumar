@@ -43,17 +43,13 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.txtsubtotalVT = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbcantidadVT = new System.Windows.Forms.ComboBox();
             this.lbltotalapagarVT = new System.Windows.Forms.Label();
             this.txtimpuestoVT = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.lblcantidadapagarVT = new System.Windows.Forms.Label();
             this.btnmenuVT = new System.Windows.Forms.Button();
-            this.cbproductoVT = new System.Windows.Forms.ComboBox();
-            this.cbempleadoVT = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.cbclienteVT = new System.Windows.Forms.ComboBox();
             this.dtpfechanaVT = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.gbfleteVT = new System.Windows.Forms.GroupBox();
@@ -66,9 +62,19 @@
             this.txtcliente = new System.Windows.Forms.TextBox();
             this.txtcantidad = new System.Windows.Forms.TextBox();
             this.txtempleado = new System.Windows.Forms.TextBox();
+            this.TxtIdProducto = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.addproducto = new System.Windows.Forms.Button();
+            this.TxtExistencia = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtidcliente = new System.Windows.Forms.TextBox();
+            this.txtidempleado = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvventasVT)).BeginInit();
             this.gbtipodepagoVT.SuspendLayout();
             this.gbfleteVT.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btneliminarVT
@@ -114,14 +120,14 @@
             this.dgvventasVT.ReadOnly = true;
             this.dgvventasVT.RowHeadersWidth = 51;
             this.dgvventasVT.RowTemplate.Height = 29;
-            this.dgvventasVT.Size = new System.Drawing.Size(746, 202);
+            this.dgvventasVT.Size = new System.Drawing.Size(746, 239);
             this.dgvventasVT.TabIndex = 28;
             this.dgvventasVT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvventasVT_CellClick);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(116, 97);
+            this.label6.Location = new System.Drawing.Point(19, 31);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 20);
             this.label6.TabIndex = 32;
@@ -129,7 +135,7 @@
             // 
             // txtpreciounitarioVT
             // 
-            this.txtpreciounitarioVT.Location = new System.Drawing.Point(586, 94);
+            this.txtpreciounitarioVT.Location = new System.Drawing.Point(501, 28);
             this.txtpreciounitarioVT.Name = "txtpreciounitarioVT";
             this.txtpreciounitarioVT.Size = new System.Drawing.Size(205, 27);
             this.txtpreciounitarioVT.TabIndex = 35;
@@ -137,7 +143,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(473, 97);
+            this.label1.Location = new System.Drawing.Point(388, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 20);
             this.label1.TabIndex = 34;
@@ -146,7 +152,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 155);
+            this.label2.Location = new System.Drawing.Point(19, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 36;
@@ -155,7 +161,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(130, 205);
+            this.label3.Location = new System.Drawing.Point(97, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 20);
             this.label3.TabIndex = 38;
@@ -166,9 +172,9 @@
             this.gbtipodepagoVT.Controls.Add(this.radioButton3);
             this.gbtipodepagoVT.Controls.Add(this.radioButton2);
             this.gbtipodepagoVT.Controls.Add(this.radioButton1);
-            this.gbtipodepagoVT.Location = new System.Drawing.Point(349, 269);
+            this.gbtipodepagoVT.Location = new System.Drawing.Point(75, 171);
             this.gbtipodepagoVT.Name = "gbtipodepagoVT";
-            this.gbtipodepagoVT.Size = new System.Drawing.Size(524, 101);
+            this.gbtipodepagoVT.Size = new System.Drawing.Size(406, 110);
             this.gbtipodepagoVT.TabIndex = 40;
             this.gbtipodepagoVT.TabStop = false;
             this.gbtipodepagoVT.Text = "Tipo de Pago";
@@ -176,7 +182,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(356, 50);
+            this.radioButton3.Location = new System.Drawing.Point(264, 50);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(117, 24);
             this.radioButton3.TabIndex = 43;
@@ -187,7 +193,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(176, 50);
+            this.radioButton2.Location = new System.Drawing.Point(110, 50);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(148, 24);
             this.radioButton2.TabIndex = 42;
@@ -221,14 +227,6 @@
             this.label4.Size = new System.Drawing.Size(65, 20);
             this.label4.TabIndex = 41;
             this.label4.Text = "Subtotal";
-            // 
-            // cbcantidadVT
-            // 
-            this.cbcantidadVT.FormattingEnabled = true;
-            this.cbcantidadVT.Location = new System.Drawing.Point(973, 144);
-            this.cbcantidadVT.Name = "cbcantidadVT";
-            this.cbcantidadVT.Size = new System.Drawing.Size(205, 28);
-            this.cbcantidadVT.TabIndex = 43;
             // 
             // lbltotalapagarVT
             // 
@@ -285,45 +283,18 @@
             this.btnmenuVT.UseVisualStyleBackColor = true;
             this.btnmenuVT.Click += new System.EventHandler(this.btnmenuVT_Click);
             // 
-            // cbproductoVT
-            // 
-            this.cbproductoVT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbproductoVT.FormattingEnabled = true;
-            this.cbproductoVT.Location = new System.Drawing.Point(973, 91);
-            this.cbproductoVT.Name = "cbproductoVT";
-            this.cbproductoVT.Size = new System.Drawing.Size(205, 28);
-            this.cbproductoVT.TabIndex = 78;
-            // 
-            // cbempleadoVT
-            // 
-            this.cbempleadoVT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbempleadoVT.FormattingEnabled = true;
-            this.cbempleadoVT.Location = new System.Drawing.Point(973, 244);
-            this.cbempleadoVT.Name = "cbempleadoVT";
-            this.cbempleadoVT.Size = new System.Drawing.Size(205, 28);
-            this.cbempleadoVT.TabIndex = 80;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(501, 150);
+            this.label5.Location = new System.Drawing.Point(75, 121);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 20);
             this.label5.TabIndex = 79;
             this.label5.Text = "Empleado";
             // 
-            // cbclienteVT
-            // 
-            this.cbclienteVT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbclienteVT.FormattingEnabled = true;
-            this.cbclienteVT.Location = new System.Drawing.Point(973, 199);
-            this.cbclienteVT.Name = "cbclienteVT";
-            this.cbclienteVT.Size = new System.Drawing.Size(205, 28);
-            this.cbclienteVT.TabIndex = 81;
-            // 
             // dtpfechanaVT
             // 
-            this.dtpfechanaVT.Location = new System.Drawing.Point(584, 200);
+            this.dtpfechanaVT.Location = new System.Drawing.Point(536, 68);
             this.dtpfechanaVT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpfechanaVT.Name = "dtpfechanaVT";
             this.dtpfechanaVT.Size = new System.Drawing.Size(289, 27);
@@ -332,7 +303,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(531, 205);
+            this.label7.Location = new System.Drawing.Point(483, 73);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(47, 20);
             this.label7.TabIndex = 82;
@@ -342,9 +313,11 @@
             // 
             this.gbfleteVT.Controls.Add(this.cbnoVT);
             this.gbfleteVT.Controls.Add(this.rbsiVT);
-            this.gbfleteVT.Location = new System.Drawing.Point(116, 269);
+            this.gbfleteVT.Controls.Add(this.textBox1);
+            this.gbfleteVT.Controls.Add(this.label10);
+            this.gbfleteVT.Location = new System.Drawing.Point(521, 171);
             this.gbfleteVT.Name = "gbfleteVT";
-            this.gbfleteVT.Size = new System.Drawing.Size(141, 101);
+            this.gbfleteVT.Size = new System.Drawing.Size(261, 110);
             this.gbfleteVT.TabIndex = 44;
             this.gbfleteVT.TabStop = false;
             this.gbfleteVT.Text = "Felete";
@@ -352,7 +325,7 @@
             // cbnoVT
             // 
             this.cbnoVT.AutoSize = true;
-            this.cbnoVT.Location = new System.Drawing.Point(79, 50);
+            this.cbnoVT.Location = new System.Drawing.Point(139, 26);
             this.cbnoVT.Name = "cbnoVT";
             this.cbnoVT.Size = new System.Drawing.Size(50, 24);
             this.cbnoVT.TabIndex = 42;
@@ -363,7 +336,7 @@
             // rbsiVT
             // 
             this.rbsiVT.AutoSize = true;
-            this.rbsiVT.Location = new System.Drawing.Point(21, 50);
+            this.rbsiVT.Location = new System.Drawing.Point(41, 26);
             this.rbsiVT.Name = "rbsiVT";
             this.rbsiVT.Size = new System.Drawing.Size(42, 24);
             this.rbsiVT.TabIndex = 41;
@@ -373,19 +346,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(191, 376);
+            this.textBox1.Location = new System.Drawing.Point(139, 63);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(104, 27);
             this.textBox1.TabIndex = 85;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(62, 376);
+            this.label10.Location = new System.Drawing.Point(10, 63);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(123, 20);
             this.label10.TabIndex = 84;
             this.label10.Text = "Cantidad de KM :";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // btnvenderVT
             // 
@@ -399,66 +374,144 @@
             // 
             // txtproducto
             // 
-            this.txtproducto.Location = new System.Drawing.Point(191, 90);
+            this.txtproducto.Location = new System.Drawing.Point(94, 24);
             this.txtproducto.Name = "txtproducto";
             this.txtproducto.Size = new System.Drawing.Size(205, 27);
             this.txtproducto.TabIndex = 87;
             // 
             // txtcliente
             // 
-            this.txtcliente.Location = new System.Drawing.Point(191, 200);
+            this.txtcliente.Location = new System.Drawing.Point(158, 70);
             this.txtcliente.Name = "txtcliente";
             this.txtcliente.Size = new System.Drawing.Size(205, 27);
             this.txtcliente.TabIndex = 89;
             // 
             // txtcantidad
             // 
-            this.txtcantidad.Location = new System.Drawing.Point(191, 148);
+            this.txtcantidad.Location = new System.Drawing.Point(94, 77);
             this.txtcantidad.Name = "txtcantidad";
             this.txtcantidad.Size = new System.Drawing.Size(205, 27);
             this.txtcantidad.TabIndex = 90;
             // 
             // txtempleado
             // 
-            this.txtempleado.Location = new System.Drawing.Point(584, 145);
+            this.txtempleado.Location = new System.Drawing.Point(158, 116);
             this.txtempleado.Name = "txtempleado";
             this.txtempleado.Size = new System.Drawing.Size(205, 27);
             this.txtempleado.TabIndex = 91;
+            // 
+            // TxtIdProducto
+            // 
+            this.TxtIdProducto.Location = new System.Drawing.Point(257, 24);
+            this.TxtIdProducto.Name = "TxtIdProducto";
+            this.TxtIdProducto.Size = new System.Drawing.Size(42, 27);
+            this.TxtIdProducto.TabIndex = 92;
+            this.TxtIdProducto.Visible = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.addproducto);
+            this.groupBox1.Controls.Add(this.TxtExistencia);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.txtcantidad);
+            this.groupBox1.Controls.Add(this.TxtIdProducto);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.txtpreciounitarioVT);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txtproducto);
+            this.groupBox1.Location = new System.Drawing.Point(76, 298);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(725, 125);
+            this.groupBox1.TabIndex = 93;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // addproducto
+            // 
+            this.addproducto.Location = new System.Drawing.Point(311, 23);
+            this.addproducto.Name = "addproducto";
+            this.addproducto.Size = new System.Drawing.Size(69, 29);
+            this.addproducto.TabIndex = 94;
+            this.addproducto.Text = "...";
+            this.addproducto.UseVisualStyleBackColor = true;
+            this.addproducto.Click += new System.EventHandler(this.addproducto_Click);
+            // 
+            // TxtExistencia
+            // 
+            this.TxtExistencia.Location = new System.Drawing.Point(501, 77);
+            this.TxtExistencia.Name = "TxtExistencia";
+            this.TxtExistencia.Size = new System.Drawing.Size(200, 27);
+            this.TxtExistencia.TabIndex = 94;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(421, 84);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(74, 20);
+            this.label11.TabIndex = 93;
+            this.label11.Text = "Existencia";
+            // 
+            // txtidcliente
+            // 
+            this.txtidcliente.Location = new System.Drawing.Point(158, 70);
+            this.txtidcliente.Name = "txtidcliente";
+            this.txtidcliente.Size = new System.Drawing.Size(49, 27);
+            this.txtidcliente.TabIndex = 94;
+            // 
+            // txtidempleado
+            // 
+            this.txtidempleado.Location = new System.Drawing.Point(158, 116);
+            this.txtidempleado.Name = "txtidempleado";
+            this.txtidempleado.Size = new System.Drawing.Size(49, 27);
+            this.txtidempleado.TabIndex = 95;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(369, 68);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 29);
+            this.button1.TabIndex = 95;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(369, 112);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(69, 29);
+            this.button2.TabIndex = 96;
+            this.button2.Text = "...";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1233, 705);
+            this.ClientSize = new System.Drawing.Size(1002, 770);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtidempleado);
+            this.Controls.Add(this.txtidcliente);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtempleado);
-            this.Controls.Add(this.txtcantidad);
             this.Controls.Add(this.txtcliente);
-            this.Controls.Add(this.txtproducto);
             this.Controls.Add(this.btnvenderVT);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.gbfleteVT);
             this.Controls.Add(this.dtpfechanaVT);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.cbclienteVT);
-            this.Controls.Add(this.cbempleadoVT);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cbproductoVT);
             this.Controls.Add(this.btnmenuVT);
             this.Controls.Add(this.lblcantidadapagarVT);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtimpuestoVT);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lbltotalapagarVT);
-            this.Controls.Add(this.cbcantidadVT);
             this.Controls.Add(this.txtsubtotalVT);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.gbtipodepagoVT);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtpreciounitarioVT);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.btneliminarVT);
             this.Controls.Add(this.btnactualizarVT);
             this.Controls.Add(this.btnagregarVT);
@@ -472,6 +525,8 @@
             this.gbtipodepagoVT.PerformLayout();
             this.gbfleteVT.ResumeLayout(false);
             this.gbfleteVT.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -484,7 +539,6 @@
         private Button btnagregarVT;
         private DataGridView dgvventasVT;
         private Label label6;
-        private TextBox txtpreciounitarioVT;
         private Label label1;
         private Label label2;
         private Label label3;
@@ -494,17 +548,13 @@
         private RadioButton radioButton1;
         private TextBox txtsubtotalVT;
         private Label label4;
-        private ComboBox cbcantidadVT;
         private Label lbltotalapagarVT;
         private TextBox txtimpuestoVT;
         private Label label8;
         private Label label9;
         private Label lblcantidadapagarVT;
         private Button btnmenuVT;
-        private ComboBox cbproductoVT;
-        private ComboBox cbempleadoVT;
         private Label label5;
-        private ComboBox cbclienteVT;
         private DateTimePicker dtpfechanaVT;
         private Label label7;
         private GroupBox gbfleteVT;
@@ -513,9 +563,19 @@
         private TextBox textBox1;
         private Label label10;
         private Button btnvenderVT;
-        private TextBox txtproducto;
-        private TextBox txtcliente;
         private TextBox txtcantidad;
-        private TextBox txtempleado;
+        private GroupBox groupBox1;
+        private Button addproducto;
+        private Label label11;
+        private Button button1;
+        private Button button2;
+        public TextBox TxtIdProducto;
+        public TextBox txtpreciounitarioVT;
+        public TextBox txtproducto;
+        public TextBox txtcliente;
+        public TextBox txtempleado;
+        public TextBox TxtExistencia;
+        public TextBox txtidcliente;
+        public TextBox txtidempleado;
     }
 }

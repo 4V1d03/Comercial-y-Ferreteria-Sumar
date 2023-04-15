@@ -15,6 +15,7 @@ namespace Comercial_y_Ferreteria_Sumar
     {
         Funciones fun = new Funciones();
         Validaciones val = new Validaciones();
+        Variables variables = new Variables();
 
         public Ventas()
         {
@@ -26,9 +27,6 @@ namespace Comercial_y_Ferreteria_Sumar
             this.CenterToScreen();
             this.MaximizeBox = false;
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            fun.mostrarproductoVT(cbproductoVT);
-            fun.mostrarempleadoVT(cbempleadoVT);
-            fun.mostrarclienteVT(cbclienteVT);
             
         }
 
@@ -59,6 +57,24 @@ namespace Comercial_y_Ferreteria_Sumar
 
         }
 
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void addproducto_Click(object sender, EventArgs e)
+        {
+            variables.selectProducto = 2;
+            Productos productos = new Productos();
+            productos.Show();
+            this.Hide();
+
+        }
     }
 
 }

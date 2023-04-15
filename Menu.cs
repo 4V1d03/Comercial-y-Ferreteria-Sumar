@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Comercial_y_Ferreteria_Sumar.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Comercial_y_Ferreteria_Sumar
 {
     public partial class Menu : Form
     {
+        Variables variables = new Variables();
         public Menu()
         {
             InitializeComponent();
@@ -75,6 +77,7 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void btnproductosMEN_Click(object sender, EventArgs e)
         {
+            
             Productos productos = new Productos();
             productos.Show();
             this.Hide();
@@ -89,6 +92,7 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void btncategoriaMEN_Click(object sender, EventArgs e)
         {
+            variables.selectProducto = 1;
             Categorias categorias = new Categorias();
             categorias.Show();
             this.Hide();

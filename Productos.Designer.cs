@@ -98,7 +98,7 @@
             this.dgvproductosPROD.RowTemplate.Height = 25;
             this.dgvproductosPROD.Size = new System.Drawing.Size(721, 209);
             this.dgvproductosPROD.TabIndex = 25;
-            this.dgvproductosPROD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproductosPROD_CellClick);
+            this.dgvproductosPROD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvproductosPROD_CellDoubleClick);
             // 
             // cbcategoriaPROD
             // 
