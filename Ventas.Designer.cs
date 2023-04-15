@@ -50,10 +50,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.lblcantidadapagarVT = new System.Windows.Forms.Label();
             this.btnmenuVT = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbproductoVT = new System.Windows.Forms.ComboBox();
             this.cbempleadoVT = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbclienteVT = new System.Windows.Forms.ComboBox();
             this.dtpfechanaVT = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.gbfleteVT = new System.Windows.Forms.GroupBox();
@@ -61,6 +61,7 @@
             this.rbsiVT = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnvenderVT = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvventasVT)).BeginInit();
             this.gbtipodepagoVT.SuspendLayout();
             this.gbfleteVT.SuspendLayout();
@@ -280,16 +281,18 @@
             this.btnmenuVT.UseVisualStyleBackColor = true;
             this.btnmenuVT.Click += new System.EventHandler(this.btnmenuVT_Click);
             // 
-            // comboBox1
+            // cbproductoVT
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(191, 94);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(205, 28);
-            this.comboBox1.TabIndex = 78;
+            this.cbproductoVT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbproductoVT.FormattingEnabled = true;
+            this.cbproductoVT.Location = new System.Drawing.Point(191, 94);
+            this.cbproductoVT.Name = "cbproductoVT";
+            this.cbproductoVT.Size = new System.Drawing.Size(205, 28);
+            this.cbproductoVT.TabIndex = 78;
             // 
             // cbempleadoVT
             // 
+            this.cbempleadoVT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbempleadoVT.FormattingEnabled = true;
             this.cbempleadoVT.Location = new System.Drawing.Point(586, 147);
             this.cbempleadoVT.Name = "cbempleadoVT";
@@ -305,13 +308,14 @@
             this.label5.TabIndex = 79;
             this.label5.Text = "Empleado";
             // 
-            // comboBox2
+            // cbclienteVT
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(191, 202);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(205, 28);
-            this.comboBox2.TabIndex = 81;
+            this.cbclienteVT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbclienteVT.FormattingEnabled = true;
+            this.cbclienteVT.Location = new System.Drawing.Point(191, 202);
+            this.cbclienteVT.Name = "cbclienteVT";
+            this.cbclienteVT.Size = new System.Drawing.Size(205, 28);
+            this.cbclienteVT.TabIndex = 81;
             // 
             // dtpfechanaVT
             // 
@@ -379,20 +383,31 @@
             this.label10.TabIndex = 84;
             this.label10.Text = "Cantidad de KM :";
             // 
+            // btnvenderVT
+            // 
+            this.btnvenderVT.Location = new System.Drawing.Point(839, 407);
+            this.btnvenderVT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnvenderVT.Name = "btnvenderVT";
+            this.btnvenderVT.Size = new System.Drawing.Size(119, 52);
+            this.btnvenderVT.TabIndex = 86;
+            this.btnvenderVT.Text = "Vender";
+            this.btnvenderVT.UseVisualStyleBackColor = true;
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 705);
+            this.Controls.Add(this.btnvenderVT);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.gbfleteVT);
             this.Controls.Add(this.dtpfechanaVT);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbclienteVT);
             this.Controls.Add(this.cbempleadoVT);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbproductoVT);
             this.Controls.Add(this.btnmenuVT);
             this.Controls.Add(this.lblcantidadapagarVT);
             this.Controls.Add(this.label9);
@@ -450,10 +465,10 @@
         private Label label9;
         private Label lblcantidadapagarVT;
         private Button btnmenuVT;
-        private ComboBox comboBox1;
+        private ComboBox cbproductoVT;
         private ComboBox cbempleadoVT;
         private Label label5;
-        private ComboBox comboBox2;
+        private ComboBox cbclienteVT;
         private DateTimePicker dtpfechanaVT;
         private Label label7;
         private GroupBox gbfleteVT;
@@ -461,5 +476,6 @@
         private RadioButton rbsiVT;
         private TextBox textBox1;
         private Label label10;
+        private Button btnvenderVT;
     }
 }

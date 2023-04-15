@@ -24,6 +24,10 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void Productos_Load(object sender, EventArgs e)
         {
+            this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+
             c.abrir();
 
             c.mostrarproductosPROD(dgvproductosPROD);
@@ -104,6 +108,44 @@ namespace Comercial_y_Ferreteria_Sumar
             this.Hide();
         }
 
+        private void txtprecioPROD_KeyPress(object sender, KeyPressEventArgs e)
+        {
 
+        }
+
+        private void txtnombrePROD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtdescripcionPROD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtExistenciaPROD_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtprecioPROD_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void txtnombrePROD_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void txtdescripcionPROD_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void txtExistenciaPROD_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace Comercial_y_Ferreteria_Sumar
         Funciones fun = new Funciones();
         int posicion = 0;
         int codigo = 0;
-
+        Validaciones val = new Validaciones();
 
         public Empleados()
         {
@@ -26,6 +26,8 @@ namespace Comercial_y_Ferreteria_Sumar
         private void Empleados_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
 
             fun.abrir();
 
@@ -115,8 +117,64 @@ namespace Comercial_y_Ferreteria_Sumar
             fun.cerrar();
         }
 
+        private void txtnombresEMP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.sololetras(txtnombresEMP, e);
+        }
 
+        private void txtapellidosEMP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.sololetras(txtapellidosEMP, e);
+        }
 
+        private void txttelefonoEMP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.solonumeros(txttelefonoEMP, e);
+        }
 
+        private void txtsalarioEMP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.solonumeros(txtsalarioEMP, e);
+        }
+
+        private void txtnombresEMP_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtnombresEMP, epEMP);
+        }
+
+        private void txtapellidosEMP_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtapellidosEMP, epEMP);
+        }
+
+        private void txtidentidadEMP_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtidentidadEMP, epEMP);
+        }
+
+        private void txttelefonoEMP_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txttelefonoEMP, epEMP);
+        }
+
+        private void txtsalarioEMP_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtsalarioEMP, epEMP);
+        }
+
+        private void txtcorreoEMP_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtcorreoEMP, epEMP);
+        }
+
+        private void txtdireccionEMP_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtdireccionEMP, epEMP);
+        }
+
+        private void txtidentidadEMP_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.solonumeros(txtapellidosEMP, e);
+        }
     }
 }

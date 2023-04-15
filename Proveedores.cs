@@ -75,6 +75,8 @@ namespace Comercial_y_Ferreteria_Sumar
         {
             this.CenterToScreen();
             c.mostrarproveedores(dgvproveedoresPROV);
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
 
             /**
             if (txtnombrePROV.Text != "" && txtrtnPROV.Text != "" && txtdireccionPROV.Text != "" && txttelefonoPROV.Text != "" && txtcorreoPROV.Text != "")

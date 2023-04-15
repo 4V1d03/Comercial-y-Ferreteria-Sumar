@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Comercial_y_Ferreteria_Sumar.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,10 @@ namespace Comercial_y_Ferreteria_Sumar
 {
     public partial class Compras : Form
     {
+
+        Funciones fun = new Funciones();
+        Validaciones val = new Validaciones();
+        
         public Compras()
         {
             InitializeComponent();
@@ -20,8 +25,13 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void Compras_Load(object sender, EventArgs e)
         {
-
-        }
+            this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            fun.mostrarCBempleado(cbempleadoCOM);
+            fun.mostrarCBProveedor(cbproveedorCOM);
+            fun.mostrarCBproducto(cbproductoCOM);
+        }   
 
         private void btnmenuCOM_Click(object sender, EventArgs e)
         {
@@ -59,6 +69,29 @@ namespace Comercial_y_Ferreteria_Sumar
 
         }
 
+        private void txtpreciocostoCOM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.solonumeros(txtpreciocostoCOM, e);
+        }
 
+        private void txtpreciocostoCOM_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtpreciocostoCOM, epCOM);
+        }
+
+        private void txtcantidadCOM_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.solonumeros(txtcantidadCOM, e);
+        }
+
+        private void txtcantidadCOM_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtcantidadCOM, epCOM);
+        }
+
+        private void dgvcomprasCOM_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label10 = new System.Windows.Forms.Label();
             this.btneliminarCOM = new System.Windows.Forms.Button();
             this.btnactualizarCOM = new System.Windows.Forms.Button();
@@ -39,7 +40,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btnmenuPUE = new System.Windows.Forms.Button();
+            this.epPUE = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvpuestosPUE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epPUE)).BeginInit();
             this.SuspendLayout();
             // 
             // label10
@@ -104,6 +107,8 @@
             this.txtnombrePUE.Name = "txtnombrePUE";
             this.txtnombrePUE.Size = new System.Drawing.Size(242, 27);
             this.txtnombrePUE.TabIndex = 62;
+            this.txtnombrePUE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombrePUE_KeyPress);
+            this.txtnombrePUE.Validating += new System.ComponentModel.CancelEventHandler(this.txtnombrePUE_Validating);
             // 
             // label1
             // 
@@ -151,6 +156,10 @@
             this.btnmenuPUE.UseVisualStyleBackColor = true;
             this.btnmenuPUE.Click += new System.EventHandler(this.btnmenuPUE_Click);
             // 
+            // epPUE
+            // 
+            this.epPUE.ContainerControl = this;
+            // 
             // Puestros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -171,6 +180,7 @@
             this.Text = "Puestros";
             this.Load += new System.EventHandler(this.Puestros_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvpuestosPUE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epPUE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +199,6 @@
         private Label label2;
         private TextBox txtbuscar;
         private Button btnmenuPUE;
+        private ErrorProvider epPUE;
     }
 }

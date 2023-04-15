@@ -14,6 +14,7 @@ namespace Comercial_y_Ferreteria_Sumar
     public partial class Categorias : Form
     {
         Funciones c = new Funciones();
+        Validaciones val = new Validaciones();
         int posicion = 0;
         int codigo = 0;
 
@@ -24,7 +25,12 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void Categorias_Load(object sender, EventArgs e)
         {
+            this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+
             c.mostrarcategorias(dgvCategoriasCAT);
+
         }
 
         private void btnagregarCAT_Click(object sender, EventArgs e)
@@ -90,6 +96,16 @@ namespace Comercial_y_Ferreteria_Sumar
             Menu menu = new Menu();
             menu.Show(this);
             this.Hide();
+        }
+
+        private void txtnombreCAT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+             val.sololetras(txtnombreCAT, e);
+        }
+
+        private void txtnombreCAT_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtnombreCAT, epCAT);
         }
     }
 }

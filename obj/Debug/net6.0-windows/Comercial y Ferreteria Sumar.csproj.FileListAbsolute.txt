@@ -47,3 +47,4 @@ C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\C
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Puestros.resources
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial y Ferreteria Sumar.csproj.CopyComplete
 C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Categorias.resources
+C:\Users\aguil\OneDrive\gitHub\Comercial y ferreteria\obj\Debug\net6.0-windows\Comercial_y_Ferreteria_Sumar.Apertura_y_Cierre.resources

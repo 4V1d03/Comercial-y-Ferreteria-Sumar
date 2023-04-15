@@ -98,6 +98,7 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
             {
 
                 respuesta = "Error no se Elimino!! " + ex.ToString();
+
             }          
 
             return respuesta;
@@ -644,16 +645,16 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
             data.DataSource = dt;
         }
 
-        public void mostrarCBempleado(ComboBox proveedor)
+        public void mostrarCBempleado(ComboBox empleado)
         {
             string consulta = "select * from Empleado";
             da = new SqlDataAdapter(consulta, cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            proveedor.DataSource = dt;
+            empleado.DataSource = dt;
 
-            proveedor.DisplayMember = "Nombres";
-            proveedor.ValueMember = "CodigoEmpleado";
+            empleado.DisplayMember = "Nombres";
+            empleado.ValueMember = "CodigoEmpleado";
         }
 
         public void mostrarCBProveedor(ComboBox proveedor)
@@ -668,28 +669,58 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
             proveedor.ValueMember = "CodigoProveedor";
         }
 
-        public void mostrarCBproducto(ComboBox proveedor)
+        public void mostrarCBproducto(ComboBox producto)
         {
             string consulta = "select * from Productos";
             da = new SqlDataAdapter(consulta, cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            proveedor.DataSource = dt;
+            producto.DataSource = dt;
 
-            proveedor.DisplayMember = "Nombre";
-            proveedor.ValueMember = "CodigoProducto";
+            producto.DisplayMember = "Nombre";
+            producto.ValueMember = "CodigoProducto";
         }
 
 
 
 
+        //Formulario Ventas
 
+        public void mostrarproductoVT(ComboBox producto)
+        {
+            string consulta = "select * from Productos";
+            da = new SqlDataAdapter(consulta, cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            producto.DataSource = dt;
 
+            producto.DisplayMember = "Nombre";
+            producto.ValueMember = "CodigoProducto";
+        }
 
+        public void mostrarempleadoVT(ComboBox empleado)
+        {
+            string consulta = "select * from Empleado";
+            da = new SqlDataAdapter(consulta, cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            empleado.DataSource = dt;
 
+            empleado.DisplayMember = "Nombres";
+            empleado.ValueMember = "CodigoEmpleado";
+        }
 
+        public void mostrarclienteVT(ComboBox cliente)
+        {
+            string consulta = "select * from Clientes";
+            da = new SqlDataAdapter(consulta, cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cliente.DataSource = dt;
 
-
+            cliente.DisplayMember = "Nombres";
+            cliente.ValueMember = "CodigoCliente";
+        }
 
 
 

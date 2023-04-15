@@ -22,6 +22,9 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void Sucursales_Load(object sender, EventArgs e)
         {
+            this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             c.mostrarsucursales(dgvsucursalesSU);
         }
 

@@ -10,12 +10,7 @@ namespace Comercial_y_Ferreteria_Sumar
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            this.CenterToScreen();
-        }
+        }       
 
         private void btningresarlg_Click(object sender, EventArgs e)
         {
@@ -37,7 +32,9 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
     }
 }

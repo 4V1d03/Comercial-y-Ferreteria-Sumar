@@ -26,6 +26,8 @@ namespace Comercial_y_Ferreteria_Sumar
         private void Clientes_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             c.mostrarclientes(dgvclientesCL);
 
         }
@@ -96,6 +98,41 @@ namespace Comercial_y_Ferreteria_Sumar
             Menu menu = new Menu();
             menu.Show(this);
             this.Hide();
+        }
+
+        private void txtnombresCL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.sololetras(txtnombresCL, e);
+        }
+
+        private void txtapellidosCL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.sololetras(txtapellidosCL, e);
+        }
+
+        private void txttelefonoCL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            val.solonumeros(txttelefonoCL, e);
+        }
+
+        private void txtcorreoCL_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtcorreoCL, epCL);
+        }
+
+        private void txtnombresCL_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtnombresCL, epCL);
+        }
+
+        private void txtapellidosCL_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txtapellidosCL, epCL);
+        }
+
+        private void txttelefonoCL_Validating(object sender, CancelEventArgs e)
+        {
+            val.validarvacios(txttelefonoCL, epCL);
         }
     }
 }

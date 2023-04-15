@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btneliminarProd = new System.Windows.Forms.Button();
             this.btnactualizarProd = new System.Windows.Forms.Button();
             this.btnagregarPROD = new System.Windows.Forms.Button();
@@ -49,7 +50,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btnmenuPROD = new System.Windows.Forms.Button();
+            this.epPROD = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvproductosPROD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epPROD)).BeginInit();
             this.SuspendLayout();
             // 
             // btneliminarProd
@@ -99,6 +102,7 @@
             // 
             // cbcategoriaPROD
             // 
+            this.cbcategoriaPROD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbcategoriaPROD.FormattingEnabled = true;
             this.cbcategoriaPROD.Location = new System.Drawing.Point(132, 114);
             this.cbcategoriaPROD.Name = "cbcategoriaPROD";
@@ -125,6 +129,7 @@
             // 
             // cbproveedorPROD
             // 
+            this.cbproveedorPROD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbproveedorPROD.FormattingEnabled = true;
             this.cbproveedorPROD.Location = new System.Drawing.Point(489, 114);
             this.cbproveedorPROD.Name = "cbproveedorPROD";
@@ -165,6 +170,8 @@
             this.txtprecioPROD.Name = "txtprecioPROD";
             this.txtprecioPROD.Size = new System.Drawing.Size(242, 27);
             this.txtprecioPROD.TabIndex = 36;
+            this.txtprecioPROD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtprecioPROD_KeyPress);
+            this.txtprecioPROD.Validating += new System.ComponentModel.CancelEventHandler(this.txtprecioPROD_Validating);
             // 
             // txtExistenciaPROD
             // 
@@ -173,6 +180,8 @@
             this.txtExistenciaPROD.Name = "txtExistenciaPROD";
             this.txtExistenciaPROD.Size = new System.Drawing.Size(242, 27);
             this.txtExistenciaPROD.TabIndex = 37;
+            this.txtExistenciaPROD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtExistenciaPROD_KeyPress);
+            this.txtExistenciaPROD.Validating += new System.ComponentModel.CancelEventHandler(this.txtExistenciaPROD_Validating);
             // 
             // txtnombrePROD
             // 
@@ -181,6 +190,8 @@
             this.txtnombrePROD.Name = "txtnombrePROD";
             this.txtnombrePROD.Size = new System.Drawing.Size(242, 27);
             this.txtnombrePROD.TabIndex = 38;
+            this.txtnombrePROD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombrePROD_KeyPress);
+            this.txtnombrePROD.Validating += new System.ComponentModel.CancelEventHandler(this.txtnombrePROD_Validating);
             // 
             // txtdescripcionPROD
             // 
@@ -189,6 +200,8 @@
             this.txtdescripcionPROD.Name = "txtdescripcionPROD";
             this.txtdescripcionPROD.Size = new System.Drawing.Size(242, 27);
             this.txtdescripcionPROD.TabIndex = 40;
+            this.txtdescripcionPROD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdescripcionPROD_KeyPress);
+            this.txtdescripcionPROD.Validating += new System.ComponentModel.CancelEventHandler(this.txtdescripcionPROD_Validating);
             // 
             // label6
             // 
@@ -246,6 +259,10 @@
             this.btnmenuPROD.UseVisualStyleBackColor = true;
             this.btnmenuPROD.Click += new System.EventHandler(this.btnmenuPROD_Click);
             // 
+            // epPROD
+            // 
+            this.epPROD.ContainerControl = this;
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -276,6 +293,7 @@
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvproductosPROD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epPROD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +322,6 @@
         private Label label7;
         private TextBox txtbuscar;
         private Button btnmenuPROD;
+        private ErrorProvider epPROD;
     }
 }

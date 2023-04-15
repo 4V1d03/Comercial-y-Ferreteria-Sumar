@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Comercial_y_Ferreteria_Sumar.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace Comercial_y_Ferreteria_Sumar
 {
     public partial class Ventas : Form
     {
+        Funciones fun = new Funciones();
+        Validaciones val = new Validaciones();
+
         public Ventas()
         {
             InitializeComponent();
@@ -19,7 +23,13 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void Ventas_Load(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            fun.mostrarproductoVT(cbproductoVT);
+            fun.mostrarempleadoVT(cbempleadoVT);
+            fun.mostrarclienteVT(cbclienteVT);
+            
         }
 
         private void btnmenuVT_Click(object sender, EventArgs e)
@@ -48,6 +58,7 @@ namespace Comercial_y_Ferreteria_Sumar
         {
 
         }
+
     }
 
 }

@@ -24,6 +24,9 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void Puestros_Load(object sender, EventArgs e)
         {
+            this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             c.mostrarPuestos(dgvpuestosPUE);
         }
 
@@ -88,6 +91,16 @@ namespace Comercial_y_Ferreteria_Sumar
             Menu menu = new Menu();
             menu.Show(this);
             this.Hide();
+        }
+
+        private void txtnombrePUE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txtnombrePUE_Validating(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

@@ -20,6 +20,8 @@ namespace Comercial_y_Ferreteria_Sumar
         private void Menu_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
         private void btnusuariosMEN_Click(object sender, EventArgs e)

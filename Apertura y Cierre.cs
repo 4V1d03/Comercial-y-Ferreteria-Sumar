@@ -19,7 +19,9 @@ namespace Comercial_y_Ferreteria_Sumar
 
         private void Apertura_y_Cierre_Load(object sender, EventArgs e)
         {
-
+            this.CenterToScreen();
+            this.MaximizeBox = false;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btneliminarCAT = new System.Windows.Forms.Button();
             this.btnactualizarCAT = new System.Windows.Forms.Button();
             this.btnagregarCAT = new System.Windows.Forms.Button();
@@ -39,7 +40,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btnmenuCAT = new System.Windows.Forms.Button();
+            this.epCAT = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoriasCAT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epCAT)).BeginInit();
             this.SuspendLayout();
             // 
             // btneliminarCAT
@@ -93,6 +96,8 @@
             this.txtnombreCAT.Name = "txtnombreCAT";
             this.txtnombreCAT.Size = new System.Drawing.Size(242, 27);
             this.txtnombreCAT.TabIndex = 62;
+            this.txtnombreCAT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombreCAT_KeyPress);
+            this.txtnombreCAT.Validating += new System.ComponentModel.CancelEventHandler(this.txtnombreCAT_Validating);
             // 
             // label6
             // 
@@ -115,7 +120,7 @@
             // 
             // btnbuscar
             // 
-            this.btnbuscar.Location = new System.Drawing.Point(324, 273);
+            this.btnbuscar.Location = new System.Drawing.Point(585, 262);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(100, 35);
             this.btnbuscar.TabIndex = 66;
@@ -126,7 +131,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 280);
+            this.label1.Location = new System.Drawing.Point(292, 269);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 65;
@@ -134,7 +139,7 @@
             // 
             // txtbuscar
             // 
-            this.txtbuscar.Location = new System.Drawing.Point(89, 277);
+            this.txtbuscar.Location = new System.Drawing.Point(350, 266);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(229, 27);
             this.txtbuscar.TabIndex = 64;
@@ -149,6 +154,10 @@
             this.btnmenuCAT.Text = "Menu";
             this.btnmenuCAT.UseVisualStyleBackColor = true;
             this.btnmenuCAT.Click += new System.EventHandler(this.btnmenuCAT_Click);
+            // 
+            // epCAT
+            // 
+            this.epCAT.ContainerControl = this;
             // 
             // Categorias
             // 
@@ -170,6 +179,7 @@
             this.Text = "Categorias";
             this.Load += new System.EventHandler(this.Categorias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategoriasCAT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epCAT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +198,6 @@
         private Label label1;
         private TextBox txtbuscar;
         private Button btnmenuCAT;
+        private ErrorProvider epCAT;
     }
 }

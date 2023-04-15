@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtnombresEMP = new System.Windows.Forms.TextBox();
@@ -63,7 +64,9 @@
             this.btnbuscar = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.epEMP = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvempleadosEMP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epEMP)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -91,6 +94,8 @@
             this.txtnombresEMP.Name = "txtnombresEMP";
             this.txtnombresEMP.Size = new System.Drawing.Size(242, 27);
             this.txtnombresEMP.TabIndex = 2;
+            this.txtnombresEMP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombresEMP_KeyPress);
+            this.txtnombresEMP.Validating += new System.ComponentModel.CancelEventHandler(this.txtnombresEMP_Validating);
             // 
             // label3
             // 
@@ -123,6 +128,8 @@
             this.txtapellidosEMP.Name = "txtapellidosEMP";
             this.txtapellidosEMP.Size = new System.Drawing.Size(242, 27);
             this.txtapellidosEMP.TabIndex = 5;
+            this.txtapellidosEMP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellidosEMP_KeyPress);
+            this.txtapellidosEMP.Validating += new System.ComponentModel.CancelEventHandler(this.txtapellidosEMP_Validating);
             // 
             // label5
             // 
@@ -195,6 +202,8 @@
             this.txttelefonoEMP.Name = "txttelefonoEMP";
             this.txttelefonoEMP.Size = new System.Drawing.Size(242, 27);
             this.txttelefonoEMP.TabIndex = 18;
+            this.txttelefonoEMP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefonoEMP_KeyPress);
+            this.txttelefonoEMP.Validating += new System.ComponentModel.CancelEventHandler(this.txttelefonoEMP_Validating);
             // 
             // txtidentidadEMP
             // 
@@ -203,6 +212,8 @@
             this.txtidentidadEMP.Name = "txtidentidadEMP";
             this.txtidentidadEMP.Size = new System.Drawing.Size(242, 27);
             this.txtidentidadEMP.TabIndex = 19;
+            this.txtidentidadEMP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtidentidadEMP_KeyPress);
+            this.txtidentidadEMP.Validating += new System.ComponentModel.CancelEventHandler(this.txtidentidadEMP_Validating);
             // 
             // btnagregarEMP
             // 
@@ -263,6 +274,7 @@
             this.txtcorreoEMP.Name = "txtcorreoEMP";
             this.txtcorreoEMP.Size = new System.Drawing.Size(206, 27);
             this.txtcorreoEMP.TabIndex = 17;
+            this.txtcorreoEMP.Validating += new System.ComponentModel.CancelEventHandler(this.txtcorreoEMP_Validating);
             // 
             // cbjornadaEMP
             // 
@@ -324,6 +336,7 @@
             this.txtdireccionEMP.Name = "txtdireccionEMP";
             this.txtdireccionEMP.Size = new System.Drawing.Size(242, 27);
             this.txtdireccionEMP.TabIndex = 30;
+            this.txtdireccionEMP.Validating += new System.ComponentModel.CancelEventHandler(this.txtdireccionEMP_Validating);
             // 
             // label13
             // 
@@ -341,6 +354,8 @@
             this.txtsalarioEMP.Name = "txtsalarioEMP";
             this.txtsalarioEMP.Size = new System.Drawing.Size(242, 27);
             this.txtsalarioEMP.TabIndex = 32;
+            this.txtsalarioEMP.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtsalarioEMP_KeyPress);
+            this.txtsalarioEMP.Validating += new System.ComponentModel.CancelEventHandler(this.txtsalarioEMP_Validating);
             // 
             // label14
             // 
@@ -388,6 +403,10 @@
             this.txtbuscar.Size = new System.Drawing.Size(229, 27);
             this.txtbuscar.TabIndex = 76;
             // 
+            // epEMP
+            // 
+            this.epEMP.ContainerControl = this;
+            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -433,6 +452,7 @@
             this.Text = "Empleados";
             this.Load += new System.EventHandler(this.Empleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvempleadosEMP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epEMP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -475,5 +495,6 @@
         private Button btnbuscar;
         private Label label15;
         private TextBox txtbuscar;
+        private ErrorProvider epEMP;
     }
 }

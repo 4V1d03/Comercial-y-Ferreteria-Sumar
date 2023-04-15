@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btneliminarCL = new System.Windows.Forms.Button();
             this.btnactualizarCL = new System.Windows.Forms.Button();
             this.btnagregarCL = new System.Windows.Forms.Button();
@@ -46,7 +47,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btnmenuCL = new System.Windows.Forms.Button();
+            this.epCL = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvclientesCL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epCL)).BeginInit();
             this.SuspendLayout();
             // 
             // btneliminarCL
@@ -102,6 +105,8 @@
             this.txtapellidosCL.Name = "txtapellidosCL";
             this.txtapellidosCL.Size = new System.Drawing.Size(242, 27);
             this.txtapellidosCL.TabIndex = 44;
+            this.txtapellidosCL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellidosCL_KeyPress);
+            this.txtapellidosCL.Validating += new System.ComponentModel.CancelEventHandler(this.txtapellidosCL_Validating);
             // 
             // txtnombresCL
             // 
@@ -109,6 +114,8 @@
             this.txtnombresCL.Name = "txtnombresCL";
             this.txtnombresCL.Size = new System.Drawing.Size(242, 27);
             this.txtnombresCL.TabIndex = 42;
+            this.txtnombresCL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombresCL_KeyPress);
+            this.txtnombresCL.Validating += new System.ComponentModel.CancelEventHandler(this.txtnombresCL_Validating);
             // 
             // label6
             // 
@@ -142,6 +149,8 @@
             this.txttelefonoCL.Name = "txttelefonoCL";
             this.txttelefonoCL.Size = new System.Drawing.Size(242, 27);
             this.txttelefonoCL.TabIndex = 49;
+            this.txttelefonoCL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttelefonoCL_KeyPress);
+            this.txttelefonoCL.Validating += new System.ComponentModel.CancelEventHandler(this.txttelefonoCL_Validating);
             // 
             // txtcorreoCL
             // 
@@ -149,6 +158,7 @@
             this.txtcorreoCL.Name = "txtcorreoCL";
             this.txtcorreoCL.Size = new System.Drawing.Size(242, 27);
             this.txtcorreoCL.TabIndex = 48;
+            this.txtcorreoCL.Validating += new System.ComponentModel.CancelEventHandler(this.txtcorreoCL_Validating);
             // 
             // label7
             // 
@@ -215,6 +225,10 @@
             this.btnmenuCL.UseVisualStyleBackColor = true;
             this.btnmenuCL.Click += new System.EventHandler(this.btnmenuCL_Click);
             // 
+            // epCL
+            // 
+            this.epCL.ContainerControl = this;
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -242,6 +256,7 @@
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.Clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvclientesCL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epCL)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,5 +282,6 @@
         private Label label3;
         private TextBox txtbuscar;
         private Button btnmenuCL;
+        private ErrorProvider epCL;
     }
 }
