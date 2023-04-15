@@ -62,6 +62,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.btnvenderVT = new System.Windows.Forms.Button();
+            this.txtproducto = new System.Windows.Forms.TextBox();
+            this.txtcliente = new System.Windows.Forms.TextBox();
+            this.txtcantidad = new System.Windows.Forms.TextBox();
+            this.txtempleado = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvventasVT)).BeginInit();
             this.gbtipodepagoVT.SuspendLayout();
             this.gbfleteVT.SuspendLayout();
@@ -221,7 +225,7 @@
             // cbcantidadVT
             // 
             this.cbcantidadVT.FormattingEnabled = true;
-            this.cbcantidadVT.Location = new System.Drawing.Point(191, 147);
+            this.cbcantidadVT.Location = new System.Drawing.Point(973, 144);
             this.cbcantidadVT.Name = "cbcantidadVT";
             this.cbcantidadVT.Size = new System.Drawing.Size(205, 28);
             this.cbcantidadVT.TabIndex = 43;
@@ -285,7 +289,7 @@
             // 
             this.cbproductoVT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbproductoVT.FormattingEnabled = true;
-            this.cbproductoVT.Location = new System.Drawing.Point(191, 94);
+            this.cbproductoVT.Location = new System.Drawing.Point(973, 91);
             this.cbproductoVT.Name = "cbproductoVT";
             this.cbproductoVT.Size = new System.Drawing.Size(205, 28);
             this.cbproductoVT.TabIndex = 78;
@@ -294,7 +298,7 @@
             // 
             this.cbempleadoVT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbempleadoVT.FormattingEnabled = true;
-            this.cbempleadoVT.Location = new System.Drawing.Point(586, 147);
+            this.cbempleadoVT.Location = new System.Drawing.Point(973, 244);
             this.cbempleadoVT.Name = "cbempleadoVT";
             this.cbempleadoVT.Size = new System.Drawing.Size(205, 28);
             this.cbempleadoVT.TabIndex = 80;
@@ -312,7 +316,7 @@
             // 
             this.cbclienteVT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbclienteVT.FormattingEnabled = true;
-            this.cbclienteVT.Location = new System.Drawing.Point(191, 202);
+            this.cbclienteVT.Location = new System.Drawing.Point(973, 199);
             this.cbclienteVT.Name = "cbclienteVT";
             this.cbclienteVT.Size = new System.Drawing.Size(205, 28);
             this.cbclienteVT.TabIndex = 81;
@@ -393,11 +397,43 @@
             this.btnvenderVT.Text = "Vender";
             this.btnvenderVT.UseVisualStyleBackColor = true;
             // 
+            // txtproducto
+            // 
+            this.txtproducto.Location = new System.Drawing.Point(191, 90);
+            this.txtproducto.Name = "txtproducto";
+            this.txtproducto.Size = new System.Drawing.Size(205, 27);
+            this.txtproducto.TabIndex = 87;
+            // 
+            // txtcliente
+            // 
+            this.txtcliente.Location = new System.Drawing.Point(191, 200);
+            this.txtcliente.Name = "txtcliente";
+            this.txtcliente.Size = new System.Drawing.Size(205, 27);
+            this.txtcliente.TabIndex = 89;
+            // 
+            // txtcantidad
+            // 
+            this.txtcantidad.Location = new System.Drawing.Point(191, 148);
+            this.txtcantidad.Name = "txtcantidad";
+            this.txtcantidad.Size = new System.Drawing.Size(205, 27);
+            this.txtcantidad.TabIndex = 90;
+            // 
+            // txtempleado
+            // 
+            this.txtempleado.Location = new System.Drawing.Point(584, 145);
+            this.txtempleado.Name = "txtempleado";
+            this.txtempleado.Size = new System.Drawing.Size(205, 27);
+            this.txtempleado.TabIndex = 91;
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 705);
+            this.ClientSize = new System.Drawing.Size(1233, 705);
+            this.Controls.Add(this.txtempleado);
+            this.Controls.Add(this.txtcantidad);
+            this.Controls.Add(this.txtcliente);
+            this.Controls.Add(this.txtproducto);
             this.Controls.Add(this.btnvenderVT);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label10);
@@ -477,5 +513,9 @@
         private TextBox textBox1;
         private Label label10;
         private Button btnvenderVT;
+        private TextBox txtproducto;
+        private TextBox txtcliente;
+        private TextBox txtcantidad;
+        private TextBox txtempleado;
     }
 }

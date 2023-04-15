@@ -59,13 +59,21 @@
             this.txtsubtotalVT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.epCOM = new System.Windows.Forms.ErrorProvider(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomprasCOM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epCOM)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtpfechaCOM
             // 
-            this.dtpfechaCOM.Location = new System.Drawing.Point(190, 216);
+            this.dtpfechaCOM.Location = new System.Drawing.Point(447, 97);
             this.dtpfechaCOM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtpfechaCOM.Name = "dtpfechaCOM";
             this.dtpfechaCOM.Size = new System.Drawing.Size(209, 27);
@@ -74,7 +82,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(137, 221);
+            this.label3.Location = new System.Drawing.Point(394, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 20);
             this.label3.TabIndex = 23;
@@ -83,7 +91,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(447, 128);
+            this.label2.Location = new System.Drawing.Point(1126, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 21;
@@ -92,7 +100,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(107, 133);
+            this.label1.Location = new System.Drawing.Point(1126, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 20;
@@ -102,7 +110,7 @@
             // 
             this.cbempleadoCOM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbempleadoCOM.FormattingEnabled = true;
-            this.cbempleadoCOM.Location = new System.Drawing.Point(190, 130);
+            this.cbempleadoCOM.Location = new System.Drawing.Point(1209, 120);
             this.cbempleadoCOM.Name = "cbempleadoCOM";
             this.cbempleadoCOM.Size = new System.Drawing.Size(209, 28);
             this.cbempleadoCOM.TabIndex = 30;
@@ -111,7 +119,7 @@
             // 
             this.cbproveedorCOM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbproveedorCOM.FormattingEnabled = true;
-            this.cbproveedorCOM.Location = new System.Drawing.Point(530, 125);
+            this.cbproveedorCOM.Location = new System.Drawing.Point(1209, 168);
             this.cbproveedorCOM.Name = "cbproveedorCOM";
             this.cbproveedorCOM.Size = new System.Drawing.Size(209, 28);
             this.cbproveedorCOM.TabIndex = 31;
@@ -227,7 +235,7 @@
             // 
             this.cbproductoCOM.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbproductoCOM.FormattingEnabled = true;
-            this.cbproductoCOM.Location = new System.Drawing.Point(530, 213);
+            this.cbproductoCOM.Location = new System.Drawing.Point(1209, 221);
             this.cbproductoCOM.Name = "cbproductoCOM";
             this.cbproductoCOM.Size = new System.Drawing.Size(205, 28);
             this.cbproductoCOM.TabIndex = 80;
@@ -235,7 +243,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(455, 216);
+            this.label6.Location = new System.Drawing.Point(1134, 224);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 20);
             this.label6.TabIndex = 79;
@@ -341,11 +349,77 @@
             // 
             this.epCOM.ContainerControl = this;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.dtpfechaCOM);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(61, 101);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(721, 165);
+            this.groupBox1.TabIndex = 92;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(37, 102);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(69, 20);
+            this.label9.TabIndex = 95;
+            this.label9.Text = "Producto";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(364, 46);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(77, 20);
+            this.label11.TabIndex = 94;
+            this.label11.Text = "Proveedor";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(29, 46);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(77, 20);
+            this.label12.TabIndex = 93;
+            this.label12.Text = "Empleado";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(112, 43);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(209, 27);
+            this.textBox1.TabIndex = 96;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(447, 43);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(209, 27);
+            this.textBox2.TabIndex = 97;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(112, 99);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(209, 27);
+            this.textBox3.TabIndex = 98;
+            // 
             // Compras
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 662);
+            this.ClientSize = new System.Drawing.Size(1458, 655);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblcantidadapagarVT);
             this.Controls.Add(this.txtimpuestoVT);
             this.Controls.Add(this.label8);
@@ -367,8 +441,6 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.cbproveedorCOM);
             this.Controls.Add(this.cbempleadoCOM);
-            this.Controls.Add(this.dtpfechaCOM);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Compras";
@@ -376,6 +448,8 @@
             this.Load += new System.EventHandler(this.Compras_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvcomprasCOM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.epCOM)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -412,5 +486,12 @@
         private TextBox txtsubtotalVT;
         private Label label7;
         private ErrorProvider epCOM;
+        private GroupBox groupBox1;
+        private Label label9;
+        private TextBox textBox3;
+        private TextBox textBox2;
+        private TextBox textBox1;
+        private Label label11;
+        private Label label12;
     }
 }

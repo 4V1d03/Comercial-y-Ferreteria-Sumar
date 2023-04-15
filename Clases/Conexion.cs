@@ -17,7 +17,7 @@ namespace Comercial_y_Ferreteria_Sumar.Clases
         public SqlDataAdapter da;
         public SqlDataReader dr;
 
-        string cadena = "Data Source=DESKTOP-AND27IO\\SQL;Initial Catalog=FerreteriaSumar;Integrated Security=True";
+        string cadena = "Data Source=MSI\\SQLEXPRESS;Initial Catalog=FerreteriaSumar;Integrated Security=True";
 
         public SqlConnection cn = new SqlConnection();
 
